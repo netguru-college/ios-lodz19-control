@@ -6,7 +6,7 @@
 import Foundation
 
 protocol SearchDelegate: AnyObject {
-    func reseivedRepositories(repoArray: [Repository])
+    func receivedRepositories(repoArray: [Repository])
     func reseivedUsers(repoArray: [User])
     func gotWrongResponce()
     
