@@ -15,7 +15,8 @@ final class Authorization {
             consumerSecret: AuthorizationStrings.clientSecret,
             authorizeUrl: AuthorizationStrings.authorizeURL,
             accessTokenUrl: AuthorizationStrings.accessTokenURL,
-            responseType: AuthorizationStrings.token)
+            responseType: AuthorizationStrings.token
+        )
         
         oauth?.authorize(
             withCallbackURL: URL(string: AuthorizationStrings.callback)!, scope: "repo+user", state: "Github") { result in
