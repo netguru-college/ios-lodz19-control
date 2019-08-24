@@ -53,7 +53,7 @@ class RepoResponceParser {
         }
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        guard let lastUpdateOn = dateFormatter.date(from: dateString) as? Date else{ return nil }
+        guard let lastUpdateOn = dateFormatter.date(from: dateString) as? Date else { return nil }
         repository = Repository(name: name, description: description, language: language, lastUpdateOn: lastUpdateOn)
         return repository
     }
