@@ -16,6 +16,7 @@
 		E605F69A23113F9C00B7DB95 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69923113F9C00B7DB95 /* LoginViewController.swift */; };
 		E605F69C23113FDB00B7DB95 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69B23113FDB00B7DB95 /* LoginView.swift */; };
 		E605F69E23113FFD00B7DB95 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E605F69D23113FFD00B7DB95 /* LoginView.xib */; };
+		E605F6A023114BA500B7DB95 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69F23114BA500B7DB95 /* LoginViewViewModel.swift */; };
 		E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */; };
 		E814F7E22310713600788FA9 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DE2310713600788FA9 /* APIMethod.swift */; };
 		E814F7E32310713600788FA9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DF2310713600788FA9 /* APIClient.swift */; };
@@ -56,6 +57,7 @@
 		E605F69923113F9C00B7DB95 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E605F69B23113FDB00B7DB95 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E605F69D23113FFD00B7DB95 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		E605F69F23114BA500B7DB95 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		E814F7DE2310713600788FA9 /* APIMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
 		E814F7DF2310713600788FA9 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				E605F69923113F9C00B7DB95 /* LoginViewController.swift */,
 				E605F69B23113FDB00B7DB95 /* LoginView.swift */,
 				E605F69D23113FFD00B7DB95 /* LoginView.xib */,
+				E605F69F23114BA500B7DB95 /* LoginViewViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E605F69A23113F9C00B7DB95 /* LoginViewController.swift in Sources */,
+				E605F6A023114BA500B7DB95 /* LoginViewViewModel.swift in Sources */,
 				E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */,
 				696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */,
 				E814F7E22310713600788FA9 /* APIMethod.swift in Sources */,
