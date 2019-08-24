@@ -22,6 +22,7 @@ class HelloWorldViewController: UIViewController {
     init(delegate: HelloWorldViewControllerDelegate?) {
         self.delegate = delegate
         super.init(nibName: nil, bundle: nil)
+        Authorization.authorize()
     }
 
     required init?(coder aDecoder: NSCoder) {
