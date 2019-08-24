@@ -9,7 +9,7 @@ import OAuthSwift
 class Authorization {
     var oauth: OAuth2Swift?
     
-    func authorize() -> OAuthSwiftRequestHandle? {
+    func authorize(completion: @escaping (String?, Error?) -> Void) {
         oauth = OAuth2Swift(
             consumerKey: AuthorizationStrings.clientID,
             consumerSecret: AuthorizationStrings.clientSecret,
@@ -17,16 +17,17 @@ class Authorization {
             accessTokenUrl: AuthorizationStrings.accessTokenURL,
             responseType: AuthorizationStrings.token)
         
-        let handle = oauth?.authorize(
+        oauth?.authorize(
             withCallbackURL: URL(string: AuthorizationStrings.callback)!, scope: "repo+user", state: "Github") { result in
                 switch result {
-                case .success(let (credential, response, parameters)):
+                case .success(let (credential, _, _)):
                     print("Oauth token: \(credential.oauthToken)")
+                    completion(credential.oauthToken, nil)
                 // Do your request
                 case .failure(let error):
                     print(error.localizedDescription)
+                    completion(nil, error)
             }
         }
-        return handle
     }
 }
