@@ -3,7 +3,6 @@
 //  NetguruCollegeApp
 //
 
-
 import UIKit
 
 protocol ReusableView {
@@ -16,4 +15,4 @@ extension ReusableView {
     }
 }
 
-extension UIView: ReusableView { }
+extension UITableViewCell: ReusableView { }

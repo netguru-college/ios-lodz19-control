@@ -3,7 +3,6 @@
 //  NetguruCollegeApp
 //
 
-
 import UIKit
 
 protocol MainViewControllerDelegate: AnyObject {
@@ -79,3 +78,5 @@ extension MainViewController: UITableViewDelegate {
         #warning("Add logic later")
     }
 }
+
+extension MainViewController: ReusableView { }

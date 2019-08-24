@@ -3,7 +3,6 @@
 //  NetguruCollegeApp
 //
 
-
 import UIKit
 
 final class MainView: UIView {
@@ -13,19 +12,12 @@ final class MainView: UIView {
 
     class func instanceFromNib() -> UIView {
         let view = UINib(nibName: "MainView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! MainView
-        view.layout()
-        view.decorate()
+        view.setup()
         return view
     }
-    private func layout() {
 
-    }
-    
-    private func decorate() {
+    private func setup() {
         searchResultTableView.separatorInset = .zero
         searchResultTableView.registerCellByNib(SearchResultTableViewCell.self)
-
-//        searchResultTableView.rowHeight = UITableView.automaticDimension
-//        searchResultTableView.estimatedRowHeight = 320
     }
 }

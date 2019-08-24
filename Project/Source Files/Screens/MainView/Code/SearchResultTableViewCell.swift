@@ -3,7 +3,6 @@
 //  NetguruCollegeApp
 //
 
-
 import UIKit
 
 final class SearchResultTableViewCell: UITableViewCell {
@@ -37,3 +36,4 @@ final class SearchResultTableViewCell: UITableViewCell {
         language.text = model.language
     }
 }
+

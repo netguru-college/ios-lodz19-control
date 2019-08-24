@@ -3,11 +3,11 @@
 //  NetguruCollegeApp
 //
 
-
 import Foundation
 import UIKit
 
 struct TempModel {
+    #warning("Temp")
     let name: String
     let description: String
     let language: String

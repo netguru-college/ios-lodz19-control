@@ -3,7 +3,6 @@
 //  NetguruCollegeApp
 //
 
-
 import UIKit
 
 extension UITableView {
