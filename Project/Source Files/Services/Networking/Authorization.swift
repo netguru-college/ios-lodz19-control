@@ -6,7 +6,7 @@
 import Foundation
 import OAuthSwift
 
-class Authorization {
+final class Authorization {
     var oauth: OAuth2Swift?
     
     func authorize(completion: @escaping (String?, Error?) -> Void) {
@@ -21,11 +21,8 @@ class Authorization {
             withCallbackURL: URL(string: AuthorizationStrings.callback)!, scope: "repo+user", state: "Github") { result in
                 switch result {
                 case .success(let (credential, _, _)):
-                    print("Oauth token: \(credential.oauthToken)")
                     completion(credential.oauthToken, nil)
-                // Do your request
                 case .failure(let error):
-                    print(error.localizedDescription)
                     completion(nil, error)
             }
         }

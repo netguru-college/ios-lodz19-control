@@ -6,6 +6,6 @@
 
 import Foundation
 
-class Dependencies {
+final class Dependencies {
     let userManager = UserManager()
 }

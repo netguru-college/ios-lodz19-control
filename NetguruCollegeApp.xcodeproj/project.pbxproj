@@ -17,6 +17,7 @@
 		AA450AB823115756004BD104 /* AuthorizationStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA450AB723115756004BD104 /* AuthorizationStrings.swift */; };
 		AA450ABA2311710B004BD104 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA450AB92311710B004BD104 /* UserManager.swift */; };
 		AA450ABC2311753A004BD104 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA450ABB2311753A004BD104 /* Dependencies.swift */; };
+		AA450ABE23117AC9004BD104 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA450ABD23117AC9004BD104 /* KeychainManager.swift */; };
 		AAF4ED8923115543005435E8 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4ED8823115543005435E8 /* Authorization.swift */; };
 		E605F69A23113F9C00B7DB95 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69923113F9C00B7DB95 /* LoginViewController.swift */; };
 		E605F69C23113FDB00B7DB95 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69B23113FDB00B7DB95 /* LoginView.swift */; };
@@ -61,6 +62,7 @@
 		AA450AB723115756004BD104 /* AuthorizationStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationStrings.swift; sourceTree = "<group>"; };
 		AA450AB92311710B004BD104 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		AA450ABB2311753A004BD104 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		AA450ABD23117AC9004BD104 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		AAF4ED8823115543005435E8 /* Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
 		B70CCCFD923A49BB70EE7D09 /* Pods-NetguruCollegeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.release.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.release.xcconfig"; sourceTree = "<group>"; };
 		E605F69923113F9C00B7DB95 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				E814F7E12310713600788FA9 /* APIRequest.swift */,
 				AAF4ED8823115543005435E8 /* Authorization.swift */,
 				AA450AB92311710B004BD104 /* UserManager.swift */,
+				AA450ABD23117AC9004BD104 /* KeychainManager.swift */,
 				AA450AB723115756004BD104 /* AuthorizationStrings.swift */,
 			);
 			path = Networking;
@@ -450,6 +453,7 @@
 				AAF4ED8923115543005435E8 /* Authorization.swift in Sources */,
 				AA450ABA2311710B004BD104 /* UserManager.swift in Sources */,
 				AA450AB823115756004BD104 /* AuthorizationStrings.swift in Sources */,
+				AA450ABE23117AC9004BD104 /* KeychainManager.swift in Sources */,
 				E814F7E92310714300788FA9 /* HelloWorldViewController.swift in Sources */,
 				E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */,
 				E814F7E52310713600788FA9 /* APIRequest.swift in Sources */,
