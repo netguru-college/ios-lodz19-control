@@ -24,7 +24,7 @@ class RepoResponceParser {
     }
     
     func parseRepoArray(array: [String: Any]) throws -> [Repository] {
-        var parced: [Repository] = []
+        var parsed: [Repository] = []
         
         if let repoArray = array["items"] as? [Any] {
             for repoData in repoArray {
