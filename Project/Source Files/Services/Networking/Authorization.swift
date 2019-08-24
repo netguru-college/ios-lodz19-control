@@ -6,15 +6,18 @@
 import Foundation
 import OAuthSwift
 
-enum Authorization {
-    static func authorize() {
-        let oauthswift = OAuth2Swift(
+class Authorization {
+    var oauth: OAuth2Swift?
+    
+    func authorize() -> OAuthSwiftRequestHandle? {
+        oauth = OAuth2Swift(
             consumerKey: AuthorizationStrings.clientID,
             consumerSecret: AuthorizationStrings.clientSecret,
             authorizeUrl: AuthorizationStrings.authorizeURL,
-            responseType: AuthorizationStrings.token
-        )
-        oauthswift.authorize(
+            accessTokenUrl: AuthorizationStrings.accessTokenURL,
+            responseType: AuthorizationStrings.token)
+        
+        let handle = oauth?.authorize(
             withCallbackURL: URL(string: AuthorizationStrings.callback)!, scope: "repo+user", state: "Github") { result in
                 switch result {
                 case .success(let (credential, response, parameters)):
@@ -24,5 +27,6 @@ enum Authorization {
                     print(error.localizedDescription)
             }
         }
+        return handle
     }
 }

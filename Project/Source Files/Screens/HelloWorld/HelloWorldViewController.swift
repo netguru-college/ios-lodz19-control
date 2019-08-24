@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import OAuthSwift
 
 protocol HelloWorldViewControllerDelegate: AnyObject {
     func didSelectNextButton()
@@ -14,6 +15,8 @@ class HelloWorldViewController: UIViewController {
     private var customView: HelloWorldView {
         return view as! HelloWorldView
     }
+    
+    var authorization = Authorization()
 
     private weak var delegate: HelloWorldViewControllerDelegate?
 
@@ -21,8 +24,8 @@ class HelloWorldViewController: UIViewController {
 
     init(delegate: HelloWorldViewControllerDelegate?) {
         self.delegate = delegate
+        authorization.authorize()
         super.init(nibName: nil, bundle: nil)
-        Authorization.authorize()
     }
 
     required init?(coder aDecoder: NSCoder) {

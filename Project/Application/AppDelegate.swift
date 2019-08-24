@@ -24,11 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         return true
     }
-    
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        if (url.host == AuthorizationStrings.callback) {
-            OAuthSwift.handle(url: url)
-        }
+        OAuthSwift.handle(url: url)
         return true
     }
 }
