@@ -28,3 +28,10 @@ extension AppFlowCoordinator: HelloWorldViewControllerDelegate {
         rootViewController.show(nextViewController, sender: nil)
     }
 }
+
+extension AppFlowCoordinator: LoginViewViewControllerDelegate {
+    
+    func didSelectSignInButton() {
+        // TODO: navigate to next screen
+    }
+}
