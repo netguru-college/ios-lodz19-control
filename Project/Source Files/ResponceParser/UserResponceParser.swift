@@ -6,5 +6,5 @@
 import Foundation
 
 class UserResponceParser {
-    func parceResponce(data: Data) {}
+    func parseResponse(data: Data) {}
 }
