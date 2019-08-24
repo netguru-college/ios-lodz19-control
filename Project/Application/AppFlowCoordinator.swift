@@ -14,7 +14,8 @@ final class AppFlowCoordinator: FlowCoordinator {
     }
 
     func initializeApp() {
-        let viewController = HelloWorldViewController(delegate: self)
+        let viewModel = MainViewModel()
+        let viewController = MainViewController(delegate: self, viewModel: viewModel)
         rootViewController = UINavigationController(rootViewController: viewController)
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()
@@ -36,6 +37,12 @@ extension AppFlowCoordinator: HelloWorldViewControllerDelegate {
     func didSelectNextButton() {
         let nextViewController = WelcomeViewController()
         rootViewController.show(nextViewController, sender: nil)
+    }
+}
+
+extension AppFlowCoordinator: MainViewControllerDelegate {
+    func searchButtonAction() {
+
     }
 }
 
