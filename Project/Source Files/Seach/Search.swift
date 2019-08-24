@@ -10,8 +10,15 @@ protocol SearchDelegate: AnyObject {
     func userFound(data: Data?)
 }
 
-class Search {
+final class Search {
+    public var delegate : SearchDelegate?
+    
     private let apiClient = APIClient()
+    /// Creates search request to API and sends it.
+    ///
+    /// - Parameters:
+    ///   - name: String (name of user or repo)
+    ///   - type: SearchRequestType (has values .projectName or .userName)
     func makeSearch(nameContains name: String, type: SearchRequestType) {
         if type == .projectName {
             seachProject(nameContains: name)
@@ -19,15 +26,15 @@ class Search {
             searchUser(nameContains: name)
         }
     }
+    
     func seachProject(nameContains name: String) {
-        let request = SearchProjectRequest()
         let convertedName = convertProjectName(name: name)
         let parameters = ["q": convertedName,
                           "order": "desc"]
-        request.parameters = parameters
+        let request = SearchProjectRequest(withParameters: parameters)
         apiClient.sendRequest(request: request,
                               success: { data in
-            print("success")
+            self.delegate?.repoFound(data: data)
         }) { error in
             if error != nil {
                 print(error!)
@@ -36,14 +43,15 @@ class Search {
             }
         }
     }
+    
     func searchUser(nameContains name: String) {
-        let request = SearchUserRequest()
         let convertedUsername = convertUserName(name: name)
-        request.parameters = ["q": convertedUsername,
+        let parameters = ["q": convertedUsername,
                               "order": "desc"]
+        let request = SearchUserRequest(withParameters: parameters)
         apiClient.sendRequest(request: request,
                               success: { data in
-            print("success searching user")
+            self.delegate?.userFound(data: data)
         }) { error in
             if error != nil {
                 print(error!)
@@ -52,9 +60,11 @@ class Search {
             }
         }
     }
+    
     func convertProjectName(name: String) -> String {
         return name.replacingOccurrences(of: " ", with: "+")
     }
+    
     func convertUserName(name: String) -> String {
         return name.replacingOccurrences(of: " ", with: "")
     }
