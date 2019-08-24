@@ -5,7 +5,7 @@
 
 import Foundation
 
-enum ResponceParserError: Error {
+enum ResponseParserError: Error {
     case wrongResponce
 }
 
