@@ -21,6 +21,10 @@
 		696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696FE49E217635D2005C9FDD /* Assets.xcassets */; };
 		696FE4A2217635D2005C9FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696FE4A0217635D2005C9FDD /* LaunchScreen.storyboard */; };
 		696FE4AD217635D2005C9FDD /* NetguruCollegeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FE4AC217635D2005C9FDD /* NetguruCollegeAppTests.swift */; };
+		E605F69A23113F9C00B7DB95 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69923113F9C00B7DB95 /* LoginViewController.swift */; };
+		E605F69C23113FDB00B7DB95 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69B23113FDB00B7DB95 /* LoginView.swift */; };
+		E605F69E23113FFD00B7DB95 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E605F69D23113FFD00B7DB95 /* LoginView.xib */; };
+		E605F6A023114BA500B7DB95 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69F23114BA500B7DB95 /* LoginViewViewModel.swift */; };
 		E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */; };
 		E814F7E22310713600788FA9 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DE2310713600788FA9 /* APIMethod.swift */; };
 		E814F7E32310713600788FA9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DF2310713600788FA9 /* APIClient.swift */; };
@@ -66,6 +70,10 @@
 		696FE4AE217635D2005C9FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70B9FAC81C5FF8A335FA5053 /* Pods-NetguruCollegeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.debug.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B70CCCFD923A49BB70EE7D09 /* Pods-NetguruCollegeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.release.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.release.xcconfig"; sourceTree = "<group>"; };
+		E605F69923113F9C00B7DB95 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E605F69B23113FDB00B7DB95 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E605F69D23113FFD00B7DB95 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		E605F69F23114BA500B7DB95 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		E814F7DE2310713600788FA9 /* APIMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
 		E814F7DF2310713600788FA9 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -221,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				14A0178D231141B8005FF9A5 /* MainView */,
+				E605F69823113F6500B7DB95 /* Login */,
 				E814F7EB2310714E00788FA9 /* Welcome */,
 				E814F7EA2310714500788FA9 /* HelloWorld */,
 			);
@@ -267,6 +276,17 @@
 				5917DB1E95701B4EE6BDDCAF /* Pods_NetguruCollegeApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E605F69823113F6500B7DB95 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E605F69923113F9C00B7DB95 /* LoginViewController.swift */,
+				E605F69B23113FDB00B7DB95 /* LoginView.swift */,
+				E605F69D23113FFD00B7DB95 /* LoginView.xib */,
+				E605F69F23114BA500B7DB95 /* LoginViewViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		E814F7DB2310712200788FA9 /* Base classes */ = {
@@ -382,6 +402,7 @@
 			files = (
 				696FE4A2217635D2005C9FDD /* LaunchScreen.storyboard in Resources */,
 				E814F7F32310717400788FA9 /* WelcomeView.xib in Resources */,
+				E605F69E23113FFD00B7DB95 /* LoginView.xib in Resources */,
 				696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */,
 				14A0179523114223005FF9A5 /* MainView.xib in Resources */,
 				E814F7EF2310716700788FA9 /* HelloWorldView.xib in Resources */,
@@ -447,6 +468,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E605F69A23113F9C00B7DB95 /* LoginViewController.swift in Sources */,
+				E605F6A023114BA500B7DB95 /* LoginViewViewModel.swift in Sources */,
 				E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */,
 				14A017A323114DA6005FF9A5 /* ReusableView.swift in Sources */,
 				14A0179323114211005FF9A5 /* MainView.swift in Sources */,
@@ -462,6 +485,7 @@
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
 				14A0179B23114A00005FF9A5 /* SearchResultTableViewCell.swift in Sources */,
 				E814F7E82310714300788FA9 /* WelcomeViewController.swift in Sources */,
+				E605F69C23113FDB00B7DB95 /* LoginView.swift in Sources */,
 				E814F7F52310719E00788FA9 /* AppFlowCoordinator.swift in Sources */,
 				E814F7ED2310716000788FA9 /* HelloWorldView.swift in Sources */,
 			);

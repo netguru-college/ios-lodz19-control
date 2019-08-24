@@ -35,3 +35,10 @@ extension AppFlowCoordinator: MainViewControllerDelegate {
 
     }
 }
+
+extension AppFlowCoordinator: LoginViewViewControllerDelegate {
+    
+    func didSelectSignInButton() {
+        // TODO: navigate to next screen
+    }
+}
