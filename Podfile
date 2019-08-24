@@ -7,4 +7,5 @@ target 'NetguruCollegeApp' do
 	# Put new pods here
 	pod 'SwiftLint', '~> 0.34.0'
   pod 'OAuthSwift', '~> 2.0.0'
+  pod 'KeychainSwift', '~> 16.0'
 end
