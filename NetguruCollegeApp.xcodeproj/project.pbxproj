@@ -10,6 +10,11 @@
 		14A01791231141F3005FF9A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A01790231141F3005FF9A5 /* MainViewController.swift */; };
 		14A0179323114211005FF9A5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0179223114211005FF9A5 /* MainView.swift */; };
 		14A0179523114223005FF9A5 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A0179423114223005FF9A5 /* MainView.xib */; };
+		14A017972311453D005FF9A5 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A017962311453D005FF9A5 /* MainViewModel.swift */; };
+		14A0179B23114A00005FF9A5 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0179A23114A00005FF9A5 /* SearchResultTableViewCell.swift */; };
+		14A017A123114D7B005FF9A5 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A017A023114D7B005FF9A5 /* UITableViewExtension.swift */; };
+		14A017A323114DA6005FF9A5 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A017A223114DA6005FF9A5 /* ReusableView.swift */; };
+		14A017A5231169B5005FF9A5 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A017A4231169B5005FF9A5 /* SearchResultTableViewCell.xib */; };
 		2E5CB7214B4A78251C20EA48 /* Pods_NetguruCollegeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5917DB1E95701B4EE6BDDCAF /* Pods_NetguruCollegeApp.framework */; };
 		696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FE497217635CB005C9FDD /* AppDelegate.swift */; };
 		696FE49D217635CB005C9FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696FE49B217635CB005C9FDD /* Main.storyboard */; };
@@ -44,6 +49,11 @@
 		14A01790231141F3005FF9A5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		14A0179223114211005FF9A5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		14A0179423114223005FF9A5 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		14A017962311453D005FF9A5 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		14A0179A23114A00005FF9A5 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		14A017A023114D7B005FF9A5 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		14A017A223114DA6005FF9A5 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		14A017A4231169B5005FF9A5 /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
 		5917DB1E95701B4EE6BDDCAF /* Pods_NetguruCollegeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetguruCollegeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		696FE494217635CB005C9FDD /* NetguruCollegeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetguruCollegeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		696FE497217635CB005C9FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,11 +110,31 @@
 		14A0178E231141D4005FF9A5 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				14A01798231149D6005FF9A5 /* Views */,
 				14A01790231141F3005FF9A5 /* MainViewController.swift */,
 				14A0179223114211005FF9A5 /* MainView.swift */,
 				14A0179423114223005FF9A5 /* MainView.xib */,
+				14A017962311453D005FF9A5 /* MainViewModel.swift */,
 			);
 			path = Code;
+			sourceTree = "<group>";
+		};
+		14A01798231149D6005FF9A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14A0179A23114A00005FF9A5 /* SearchResultTableViewCell.swift */,
+				14A017A4231169B5005FF9A5 /* SearchResultTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		14A0179F23114D69005FF9A5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				14A017A023114D7B005FF9A5 /* UITableViewExtension.swift */,
+				14A017A223114DA6005FF9A5 /* ReusableView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		4EF6845F21E6435400DA50FC /* Services */ = {
@@ -168,6 +198,7 @@
 		696FE4B7217637B5005C9FDD /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				14A0179F23114D69005FF9A5 /* Extensions */,
 				696FE4BF217638AD005C9FDD /* Application */,
 				696FE4B8217637C7005C9FDD /* Source Files */,
 				696FE4BC217637FB005C9FDD /* Interfaces */,
@@ -354,6 +385,7 @@
 				696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */,
 				14A0179523114223005FF9A5 /* MainView.xib in Resources */,
 				E814F7EF2310716700788FA9 /* HelloWorldView.xib in Resources */,
+				14A017A5231169B5005FF9A5 /* SearchResultTableViewCell.xib in Resources */,
 				696FE49D217635CB005C9FDD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,15 +448,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */,
+				14A017A323114DA6005FF9A5 /* ReusableView.swift in Sources */,
 				14A0179323114211005FF9A5 /* MainView.swift in Sources */,
 				696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */,
+				14A017A123114D7B005FF9A5 /* UITableViewExtension.swift in Sources */,
 				E814F7E22310713600788FA9 /* APIMethod.swift in Sources */,
 				14A01791231141F3005FF9A5 /* MainViewController.swift in Sources */,
 				E814F7E42310713600788FA9 /* APIError.swift in Sources */,
 				E814F7E92310714300788FA9 /* HelloWorldViewController.swift in Sources */,
+				14A017972311453D005FF9A5 /* MainViewModel.swift in Sources */,
 				E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */,
 				E814F7E52310713600788FA9 /* APIRequest.swift in Sources */,
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
+				14A0179B23114A00005FF9A5 /* SearchResultTableViewCell.swift in Sources */,
 				E814F7E82310714300788FA9 /* WelcomeViewController.swift in Sources */,
 				E814F7F52310719E00788FA9 /* AppFlowCoordinator.swift in Sources */,
 				E814F7ED2310716000788FA9 /* HelloWorldView.swift in Sources */,

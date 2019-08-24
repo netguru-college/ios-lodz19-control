@@ -15,8 +15,65 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MainView" customModule="NetguruCollegeApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gi6-pN-O33">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ggH-Lo-nJh">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kxh-4J-Pau">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MJZ-kt-p9i">
+                                            <rect key="frame" x="10" y="0.0" width="329" height="30"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mku-KG-BhS">
+                                            <rect key="frame" x="349" y="0.0" width="50" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="aYv-Ua-Ryu"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="QGC-xz-MQ0" firstAttribute="bottom" secondItem="Mku-KG-BhS" secondAttribute="bottom" id="6Ku-sO-VP4"/>
+                                        <constraint firstItem="QGC-xz-MQ0" firstAttribute="trailing" secondItem="Mku-KG-BhS" secondAttribute="trailing" constant="15" id="Coi-1o-lTt"/>
+                                        <constraint firstItem="Mku-KG-BhS" firstAttribute="top" secondItem="QGC-xz-MQ0" secondAttribute="top" id="E14-lw-HWC"/>
+                                        <constraint firstItem="MJZ-kt-p9i" firstAttribute="top" secondItem="QGC-xz-MQ0" secondAttribute="top" id="Hha-fh-wLc"/>
+                                        <constraint firstItem="MJZ-kt-p9i" firstAttribute="leading" secondItem="QGC-xz-MQ0" secondAttribute="leading" constant="10" id="KNp-XF-piJ"/>
+                                        <constraint firstAttribute="height" constant="30" id="SkV-87-KPK"/>
+                                        <constraint firstItem="QGC-xz-MQ0" firstAttribute="bottom" secondItem="MJZ-kt-p9i" secondAttribute="bottom" id="qPK-NI-5KX"/>
+                                        <constraint firstItem="Mku-KG-BhS" firstAttribute="leading" secondItem="MJZ-kt-p9i" secondAttribute="trailing" constant="10" id="xRF-rY-9NX"/>
+                                    </constraints>
+                                    <viewLayoutGuide key="safeArea" id="QGC-xz-MQ0"/>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YaG-hR-Hr8">
+                            <rect key="frame" x="0.0" y="40" width="414" height="778"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                </stackView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gi6-pN-O33" secondAttribute="trailing" id="60d-Sv-BzI"/>
+                <constraint firstItem="gi6-pN-O33" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="APh-F5-HZX"/>
+                <constraint firstItem="gi6-pN-O33" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="gKV-fd-Kws"/>
+                <constraint firstItem="gi6-pN-O33" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="yL0-gK-XFy"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="searchButton" destination="Mku-KG-BhS" id="RP4-KP-7cP"/>
+                <outlet property="searchResultTableView" destination="YaG-hR-Hr8" id="R1n-CI-MI0"/>
+                <outlet property="searchTextField" destination="MJZ-kt-p9i" id="q11-03-7p6"/>
+            </connections>
         </view>
     </objects>
 </document>
