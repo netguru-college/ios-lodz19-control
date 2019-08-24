@@ -74,7 +74,7 @@ final class Search {
         return name.replacingOccurrences(of: " ", with: "+")
     }
     
-    func convertUserName(name: String) -> String {
+    private func convertUserName(name: String) -> String {
         return name.replacingOccurrences(of: " ", with: "")
     }
 }
