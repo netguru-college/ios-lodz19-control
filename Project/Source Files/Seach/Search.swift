@@ -70,7 +70,7 @@ final class Search {
         }
     }
     
-    func convertProjectName(name: String) -> String {
+    private func convertProjectName(name: String) -> String {
         return name.replacingOccurrences(of: " ", with: "+")
     }
     
