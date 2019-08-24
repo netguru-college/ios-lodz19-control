@@ -17,6 +17,18 @@
 		E605F69C23113FDB00B7DB95 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69B23113FDB00B7DB95 /* LoginView.swift */; };
 		E605F69E23113FFD00B7DB95 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E605F69D23113FFD00B7DB95 /* LoginView.xib */; };
 		E605F6A023114BA500B7DB95 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69F23114BA500B7DB95 /* LoginViewViewModel.swift */; };
+		E605F6B623116F2400B7DB95 /* ReadmeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F6B423116F2400B7DB95 /* ReadmeViewController.swift */; };
+		E605F6B723116F2400B7DB95 /* ReadmeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E605F6B523116F2400B7DB95 /* ReadmeView.xib */; };
+		E605F6B923116FA400B7DB95 /* ReadmeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F6B823116FA400B7DB95 /* ReadmeView.swift */; };
+		E6AF4F5023117441009BC89D /* FilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F4E23117441009BC89D /* FilesViewController.swift */; };
+		E6AF4F5123117441009BC89D /* FilesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6AF4F4F23117441009BC89D /* FilesView.xib */; };
+		E6AF4F532311746E009BC89D /* FilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F522311746E009BC89D /* FilesView.swift */; };
+		E6AF4F57231175A5009BC89D /* PullRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F55231175A5009BC89D /* PullRequestsViewController.swift */; };
+		E6AF4F58231175A5009BC89D /* PullRequestsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6AF4F56231175A5009BC89D /* PullRequestsView.xib */; };
+		E6AF4F5A231175D7009BC89D /* PullRequestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F59231175D7009BC89D /* PullRequestsView.swift */; };
+		E6AF4F5E231176E5009BC89D /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F5C231176E5009BC89D /* OtherViewController.swift */; };
+		E6AF4F5F231176E5009BC89D /* OtherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6AF4F5D231176E5009BC89D /* OtherView.xib */; };
+		E6AF4F6123117A6E009BC89D /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F6023117A6E009BC89D /* OtherView.swift */; };
 		E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */; };
 		E814F7E22310713600788FA9 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DE2310713600788FA9 /* APIMethod.swift */; };
 		E814F7E32310713600788FA9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DF2310713600788FA9 /* APIClient.swift */; };
@@ -58,6 +70,18 @@
 		E605F69B23113FDB00B7DB95 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E605F69D23113FFD00B7DB95 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		E605F69F23114BA500B7DB95 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		E605F6B423116F2400B7DB95 /* ReadmeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadmeViewController.swift; sourceTree = "<group>"; };
+		E605F6B523116F2400B7DB95 /* ReadmeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadmeView.xib; sourceTree = "<group>"; };
+		E605F6B823116FA400B7DB95 /* ReadmeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadmeView.swift; sourceTree = "<group>"; };
+		E6AF4F4E23117441009BC89D /* FilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesViewController.swift; sourceTree = "<group>"; };
+		E6AF4F4F23117441009BC89D /* FilesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilesView.xib; sourceTree = "<group>"; };
+		E6AF4F522311746E009BC89D /* FilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesView.swift; sourceTree = "<group>"; };
+		E6AF4F55231175A5009BC89D /* PullRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestsViewController.swift; sourceTree = "<group>"; };
+		E6AF4F56231175A5009BC89D /* PullRequestsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PullRequestsView.xib; sourceTree = "<group>"; };
+		E6AF4F59231175D7009BC89D /* PullRequestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestsView.swift; sourceTree = "<group>"; };
+		E6AF4F5C231176E5009BC89D /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		E6AF4F5D231176E5009BC89D /* OtherView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherView.xib; sourceTree = "<group>"; };
+		E6AF4F6023117A6E009BC89D /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
 		E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		E814F7DE2310713600788FA9 /* APIMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
 		E814F7DF2310713600788FA9 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -173,6 +197,10 @@
 		696FE4B9217637D5005C9FDD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E6AF4F5B231176B0009BC89D /* Other */,
+				E6AF4F5423117586009BC89D /* PullRequests */,
+				E6AF4F4D2311742C009BC89D /* Files */,
+				E605F6B323116EFA00B7DB95 /* Readme */,
 				E605F69823113F6500B7DB95 /* Login */,
 				E814F7EB2310714E00788FA9 /* Welcome */,
 				E814F7EA2310714500788FA9 /* HelloWorld */,
@@ -225,12 +253,52 @@
 		E605F69823113F6500B7DB95 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				E605F69F23114BA500B7DB95 /* LoginViewViewModel.swift */,
 				E605F69923113F9C00B7DB95 /* LoginViewController.swift */,
 				E605F69B23113FDB00B7DB95 /* LoginView.swift */,
 				E605F69D23113FFD00B7DB95 /* LoginView.xib */,
-				E605F69F23114BA500B7DB95 /* LoginViewViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		E605F6B323116EFA00B7DB95 /* Readme */ = {
+			isa = PBXGroup;
+			children = (
+				E605F6B423116F2400B7DB95 /* ReadmeViewController.swift */,
+				E605F6B823116FA400B7DB95 /* ReadmeView.swift */,
+				E605F6B523116F2400B7DB95 /* ReadmeView.xib */,
+			);
+			path = Readme;
+			sourceTree = "<group>";
+		};
+		E6AF4F4D2311742C009BC89D /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6AF4F4E23117441009BC89D /* FilesViewController.swift */,
+				E6AF4F522311746E009BC89D /* FilesView.swift */,
+				E6AF4F4F23117441009BC89D /* FilesView.xib */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		E6AF4F5423117586009BC89D /* PullRequests */ = {
+			isa = PBXGroup;
+			children = (
+				E6AF4F55231175A5009BC89D /* PullRequestsViewController.swift */,
+				E6AF4F59231175D7009BC89D /* PullRequestsView.swift */,
+				E6AF4F56231175A5009BC89D /* PullRequestsView.xib */,
+			);
+			path = PullRequests;
+			sourceTree = "<group>";
+		};
+		E6AF4F5B231176B0009BC89D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E6AF4F5C231176E5009BC89D /* OtherViewController.swift */,
+				E6AF4F6023117A6E009BC89D /* OtherView.swift */,
+				E6AF4F5D231176E5009BC89D /* OtherView.xib */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		E814F7DB2310712200788FA9 /* Base classes */ = {
@@ -345,11 +413,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				696FE4A2217635D2005C9FDD /* LaunchScreen.storyboard in Resources */,
+				E6AF4F5F231176E5009BC89D /* OtherView.xib in Resources */,
 				E814F7F32310717400788FA9 /* WelcomeView.xib in Resources */,
+				E6AF4F5123117441009BC89D /* FilesView.xib in Resources */,
 				E605F69E23113FFD00B7DB95 /* LoginView.xib in Resources */,
 				696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */,
 				E814F7EF2310716700788FA9 /* HelloWorldView.xib in Resources */,
 				696FE49D217635CB005C9FDD /* Main.storyboard in Resources */,
+				E6AF4F58231175A5009BC89D /* PullRequestsView.xib in Resources */,
+				E605F6B723116F2400B7DB95 /* ReadmeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,12 +486,20 @@
 				E605F6A023114BA500B7DB95 /* LoginViewViewModel.swift in Sources */,
 				E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */,
 				696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */,
+				E6AF4F5023117441009BC89D /* FilesViewController.swift in Sources */,
+				E6AF4F6123117A6E009BC89D /* OtherView.swift in Sources */,
+				E605F6B923116FA400B7DB95 /* ReadmeView.swift in Sources */,
 				E814F7E22310713600788FA9 /* APIMethod.swift in Sources */,
 				E814F7E42310713600788FA9 /* APIError.swift in Sources */,
+				E6AF4F532311746E009BC89D /* FilesView.swift in Sources */,
 				E814F7E92310714300788FA9 /* HelloWorldViewController.swift in Sources */,
 				E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */,
 				E814F7E52310713600788FA9 /* APIRequest.swift in Sources */,
+				E6AF4F57231175A5009BC89D /* PullRequestsViewController.swift in Sources */,
+				E6AF4F5A231175D7009BC89D /* PullRequestsView.swift in Sources */,
+				E605F6B623116F2400B7DB95 /* ReadmeViewController.swift in Sources */,
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
+				E6AF4F5E231176E5009BC89D /* OtherViewController.swift in Sources */,
 				E814F7E82310714300788FA9 /* WelcomeViewController.swift in Sources */,
 				E605F69C23113FDB00B7DB95 /* LoginView.swift in Sources */,
 				E814F7F52310719E00788FA9 /* AppFlowCoordinator.swift in Sources */,

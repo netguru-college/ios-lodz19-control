@@ -19,6 +19,16 @@ final class AppFlowCoordinator: FlowCoordinator {
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()
     }
+
+    func setTabBarAsRoot() {
+        let tableViewController = UITabBarController()
+        let readmeViewController = ReadmeViewController()
+        let filesViewController = FilesViewController()
+        let pullRequestsViewController = PullRequestsViewController()
+        let otherViewController = OtherViewController()
+        tableViewController.setViewControllers([readmeViewController, filesViewController, pullRequestsViewController, otherViewController], animated: true)
+        rootViewController = tableViewController
+    }
 }
 
 extension AppFlowCoordinator: HelloWorldViewControllerDelegate {
