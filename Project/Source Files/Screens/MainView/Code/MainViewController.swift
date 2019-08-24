@@ -17,10 +17,12 @@ final class MainViewController: UIViewController {
 
     private weak var delegate: MainViewControllerDelegate?
     private var viewModel: MainViewModelProtocol
+    private let userManager: UserManager
 
-    init(delegate: MainViewControllerDelegate?, viewModel: MainViewModelProtocol) {
+    init(delegate: MainViewControllerDelegate?, viewModel: MainViewModelProtocol, userManager: UserManager) {
         self.delegate = delegate
         self.viewModel = viewModel
+        self.userManager = userManager
         super.init(nibName: nil, bundle: nil)
         self.viewModel.delegate = self
     }
