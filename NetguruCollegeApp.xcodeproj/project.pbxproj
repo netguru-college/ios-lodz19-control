@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14A01791231141F3005FF9A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A01790231141F3005FF9A5 /* MainViewController.swift */; };
+		14A0179323114211005FF9A5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0179223114211005FF9A5 /* MainView.swift */; };
+		14A0179523114223005FF9A5 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A0179423114223005FF9A5 /* MainView.xib */; };
 		2E5CB7214B4A78251C20EA48 /* Pods_NetguruCollegeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5917DB1E95701B4EE6BDDCAF /* Pods_NetguruCollegeApp.framework */; };
 		696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FE497217635CB005C9FDD /* AppDelegate.swift */; };
 		696FE49D217635CB005C9FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696FE49B217635CB005C9FDD /* Main.storyboard */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14A01790231141F3005FF9A5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		14A0179223114211005FF9A5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		14A0179423114223005FF9A5 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		5917DB1E95701B4EE6BDDCAF /* Pods_NetguruCollegeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetguruCollegeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		696FE494217635CB005C9FDD /* NetguruCollegeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetguruCollegeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		696FE497217635CB005C9FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +89,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14A0178D231141B8005FF9A5 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				14A0178E231141D4005FF9A5 /* Code */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		14A0178E231141D4005FF9A5 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				14A01790231141F3005FF9A5 /* MainViewController.swift */,
+				14A0179223114211005FF9A5 /* MainView.swift */,
+				14A0179423114223005FF9A5 /* MainView.xib */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
 		4EF6845F21E6435400DA50FC /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +189,7 @@
 		696FE4B9217637D5005C9FDD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				14A0178D231141B8005FF9A5 /* MainView */,
 				E814F7EB2310714E00788FA9 /* Welcome */,
 				E814F7EA2310714500788FA9 /* HelloWorld */,
 			);
@@ -327,6 +352,7 @@
 				696FE4A2217635D2005C9FDD /* LaunchScreen.storyboard in Resources */,
 				E814F7F32310717400788FA9 /* WelcomeView.xib in Resources */,
 				696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */,
+				14A0179523114223005FF9A5 /* MainView.xib in Resources */,
 				E814F7EF2310716700788FA9 /* HelloWorldView.xib in Resources */,
 				696FE49D217635CB005C9FDD /* Main.storyboard in Resources */,
 			);
@@ -390,8 +416,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */,
+				14A0179323114211005FF9A5 /* MainView.swift in Sources */,
 				696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */,
 				E814F7E22310713600788FA9 /* APIMethod.swift in Sources */,
+				14A01791231141F3005FF9A5 /* MainViewController.swift in Sources */,
 				E814F7E42310713600788FA9 /* APIError.swift in Sources */,
 				E814F7E92310714300788FA9 /* HelloWorldViewController.swift in Sources */,
 				E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */,

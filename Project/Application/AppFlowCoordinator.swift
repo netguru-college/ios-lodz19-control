@@ -14,7 +14,7 @@ final class AppFlowCoordinator: FlowCoordinator {
     }
 
     func initializeApp() {
-        let viewController = HelloWorldViewController(delegate: self)
+        let viewController = MainViewController(delegate: self)
         rootViewController = UINavigationController(rootViewController: viewController)
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()
@@ -27,4 +27,8 @@ extension AppFlowCoordinator: HelloWorldViewControllerDelegate {
         let nextViewController = WelcomeViewController()
         rootViewController.show(nextViewController, sender: nil)
     }
+}
+
+extension AppFlowCoordinator: MainViewControllerDelegate {
+    
 }
