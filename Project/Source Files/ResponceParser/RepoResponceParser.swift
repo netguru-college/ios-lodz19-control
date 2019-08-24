@@ -7,7 +7,7 @@ import Foundation
 
 class RepoResponceParser {
     func parceResponce(data: Data) throws -> [Repository] {
-        var repositories : [Repository] = []
+        var repositories: [Repository] = []
         do {
             //Create an array of JSONS
             if let responceArray = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
