@@ -8,14 +8,16 @@ import UIKit
 final class AppFlowCoordinator: FlowCoordinator {
 
     private let window: UIWindow
+    private let dependencies: Dependencies
 
     init(window: UIWindow) {
         self.window = window
+        dependencies = Dependencies()
     }
 
     func initializeApp() {
         let viewModel = MainViewModel()
-        let viewController = MainViewController(delegate: self, viewModel: viewModel)
+        let viewController = MainViewController(delegate: self, viewModel: viewModel, userManager: dependencies.userManager)
         rootViewController = UINavigationController(rootViewController: viewController)
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()
