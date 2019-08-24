@@ -6,19 +6,23 @@
 import Foundation
 
 protocol SearchDelegate: AnyObject {
-    func repoFound(data: Data?)
-    func userFound(data: Data?)
+    func reseivedRepositories(repoArray: [Repository])
+    func reseivedUsers(repoArray: [User])
+    func gotWrongResponce()
+    
 }
 
 final class Search {
-    public var delegate : SearchDelegate?
-    
+    let parser = ResponceParser()
+    public weak var delegate: SearchDelegate?
     private let apiClient = APIClient()
     /// Creates search request to API and sends it.
     ///
     /// - Parameters:
     ///   - name: String (name of user or repo)
     ///   - type: SearchRequestType (has values .projectName or .userName)
+    /// - Returns:
+    ///     reseivedRepositories(repoArray: [Repository]), where repoArray can be empty or gotWrongResponce() if responce can't be processed
     func makeSearch(nameContains name: String, type: SearchRequestType) {
         if type == .projectName {
             seachProject(nameContains: name)
@@ -34,7 +38,12 @@ final class Search {
         let request = SearchProjectRequest(withParameters: parameters)
         apiClient.sendRequest(request: request,
                               success: { data in
-            self.delegate?.repoFound(data: data)
+            do {
+                let repositories = try self.parser.repoFound(data: data)
+                self.delegate?.reseivedRepositories(repoArray: repositories)
+            } catch {
+                self.delegate?.gotWrongResponce()
+            }
         }) { error in
             if error != nil {
                 print(error!)
@@ -47,11 +56,11 @@ final class Search {
     func searchUser(nameContains name: String) {
         let convertedUsername = convertUserName(name: name)
         let parameters = ["q": convertedUsername,
-                              "order": "desc"]
+                          "order": "desc"]
         let request = SearchUserRequest(withParameters: parameters)
         apiClient.sendRequest(request: request,
                               success: { data in
-            self.delegate?.userFound(data: data)
+            self.parser.userFound(data: data)
         }) { error in
             if error != nil {
                 print(error!)
