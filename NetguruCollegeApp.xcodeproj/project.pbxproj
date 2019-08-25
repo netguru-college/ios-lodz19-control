@@ -3,16 +3,46 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14A01791231141F3005FF9A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A01790231141F3005FF9A5 /* MainViewController.swift */; };
+		14A0179323114211005FF9A5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0179223114211005FF9A5 /* MainView.swift */; };
+		14A0179523114223005FF9A5 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A0179423114223005FF9A5 /* MainView.xib */; };
+		14A017972311453D005FF9A5 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A017962311453D005FF9A5 /* MainViewModel.swift */; };
+		14A0179B23114A00005FF9A5 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0179A23114A00005FF9A5 /* SearchResultTableViewCell.swift */; };
+		14A017A123114D7B005FF9A5 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A017A023114D7B005FF9A5 /* UITableViewExtension.swift */; };
+		14A017A323114DA6005FF9A5 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A017A223114DA6005FF9A5 /* ReusableView.swift */; };
+		14A017A5231169B5005FF9A5 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A017A4231169B5005FF9A5 /* SearchResultTableViewCell.xib */; };
 		2E5CB7214B4A78251C20EA48 /* Pods_NetguruCollegeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5917DB1E95701B4EE6BDDCAF /* Pods_NetguruCollegeApp.framework */; };
 		696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FE497217635CB005C9FDD /* AppDelegate.swift */; };
 		696FE49D217635CB005C9FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696FE49B217635CB005C9FDD /* Main.storyboard */; };
 		696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696FE49E217635D2005C9FDD /* Assets.xcassets */; };
 		696FE4A2217635D2005C9FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696FE4A0217635D2005C9FDD /* LaunchScreen.storyboard */; };
 		696FE4AD217635D2005C9FDD /* NetguruCollegeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FE4AC217635D2005C9FDD /* NetguruCollegeAppTests.swift */; };
+		AA450AB6231155F6004BD104 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA450AB5231155F6004BD104 /* OAuthSwift.framework */; };
+		AA450AB823115756004BD104 /* AuthorizationStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA450AB723115756004BD104 /* AuthorizationStrings.swift */; };
+		AA450ABA2311710B004BD104 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA450AB92311710B004BD104 /* UserManager.swift */; };
+		AA450ABC2311753A004BD104 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA450ABB2311753A004BD104 /* Dependencies.swift */; };
+		AA450ABE23117AC9004BD104 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA450ABD23117AC9004BD104 /* KeychainManager.swift */; };
+		AAF4ED8923115543005435E8 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4ED8823115543005435E8 /* Authorization.swift */; };
+		E605F69A23113F9C00B7DB95 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69923113F9C00B7DB95 /* LoginViewController.swift */; };
+		E605F69C23113FDB00B7DB95 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69B23113FDB00B7DB95 /* LoginView.swift */; };
+		E605F69E23113FFD00B7DB95 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E605F69D23113FFD00B7DB95 /* LoginView.xib */; };
+		E605F6A023114BA500B7DB95 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69F23114BA500B7DB95 /* LoginViewViewModel.swift */; };
+		E605F6B623116F2400B7DB95 /* ReadmeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F6B423116F2400B7DB95 /* ReadmeViewController.swift */; };
+		E605F6B723116F2400B7DB95 /* ReadmeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E605F6B523116F2400B7DB95 /* ReadmeView.xib */; };
+		E605F6B923116FA400B7DB95 /* ReadmeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F6B823116FA400B7DB95 /* ReadmeView.swift */; };
+		E6AF4F5023117441009BC89D /* FilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F4E23117441009BC89D /* FilesViewController.swift */; };
+		E6AF4F5123117441009BC89D /* FilesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6AF4F4F23117441009BC89D /* FilesView.xib */; };
+		E6AF4F532311746E009BC89D /* FilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F522311746E009BC89D /* FilesView.swift */; };
+		E6AF4F57231175A5009BC89D /* PullRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F55231175A5009BC89D /* PullRequestsViewController.swift */; };
+		E6AF4F58231175A5009BC89D /* PullRequestsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6AF4F56231175A5009BC89D /* PullRequestsView.xib */; };
+		E6AF4F5A231175D7009BC89D /* PullRequestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F59231175D7009BC89D /* PullRequestsView.swift */; };
+		E6AF4F5E231176E5009BC89D /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F5C231176E5009BC89D /* OtherViewController.swift */; };
+		E6AF4F5F231176E5009BC89D /* OtherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6AF4F5D231176E5009BC89D /* OtherView.xib */; };
+		E6AF4F6123117A6E009BC89D /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F6023117A6E009BC89D /* OtherView.swift */; };
 		E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */; };
 		E814F7E22310713600788FA9 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DE2310713600788FA9 /* APIMethod.swift */; };
 		E814F7E32310713600788FA9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DF2310713600788FA9 /* APIClient.swift */; };
@@ -47,6 +77,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14A01790231141F3005FF9A5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		14A0179223114211005FF9A5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		14A0179423114223005FF9A5 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		14A017962311453D005FF9A5 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		14A0179A23114A00005FF9A5 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		14A017A023114D7B005FF9A5 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		14A017A223114DA6005FF9A5 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		14A017A4231169B5005FF9A5 /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
 		5917DB1E95701B4EE6BDDCAF /* Pods_NetguruCollegeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetguruCollegeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		696FE494217635CB005C9FDD /* NetguruCollegeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetguruCollegeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		696FE497217635CB005C9FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +96,29 @@
 		696FE4AC217635D2005C9FDD /* NetguruCollegeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetguruCollegeAppTests.swift; sourceTree = "<group>"; };
 		696FE4AE217635D2005C9FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70B9FAC81C5FF8A335FA5053 /* Pods-NetguruCollegeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.debug.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AA450AB5231155F6004BD104 /* OAuthSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OAuthSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA450AB723115756004BD104 /* AuthorizationStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationStrings.swift; sourceTree = "<group>"; };
+		AA450AB92311710B004BD104 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		AA450ABB2311753A004BD104 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		AA450ABD23117AC9004BD104 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		AAF4ED8823115543005435E8 /* Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
 		B70CCCFD923A49BB70EE7D09 /* Pods-NetguruCollegeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.release.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.release.xcconfig"; sourceTree = "<group>"; };
+		E605F69923113F9C00B7DB95 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E605F69B23113FDB00B7DB95 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E605F69D23113FFD00B7DB95 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		E605F69F23114BA500B7DB95 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		E605F6B423116F2400B7DB95 /* ReadmeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadmeViewController.swift; sourceTree = "<group>"; };
+		E605F6B523116F2400B7DB95 /* ReadmeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadmeView.xib; sourceTree = "<group>"; };
+		E605F6B823116FA400B7DB95 /* ReadmeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadmeView.swift; sourceTree = "<group>"; };
+		E6AF4F4E23117441009BC89D /* FilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesViewController.swift; sourceTree = "<group>"; };
+		E6AF4F4F23117441009BC89D /* FilesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilesView.xib; sourceTree = "<group>"; };
+		E6AF4F522311746E009BC89D /* FilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesView.swift; sourceTree = "<group>"; };
+		E6AF4F55231175A5009BC89D /* PullRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestsViewController.swift; sourceTree = "<group>"; };
+		E6AF4F56231175A5009BC89D /* PullRequestsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PullRequestsView.xib; sourceTree = "<group>"; };
+		E6AF4F59231175D7009BC89D /* PullRequestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestsView.swift; sourceTree = "<group>"; };
+		E6AF4F5C231176E5009BC89D /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		E6AF4F5D231176E5009BC89D /* OtherView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherView.xib; sourceTree = "<group>"; };
+		E6AF4F6023117A6E009BC89D /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
 		E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		E814F7DE2310713600788FA9 /* APIMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
 		E814F7DF2310713600788FA9 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -87,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA450AB6231155F6004BD104 /* OAuthSwift.framework in Frameworks */,
 				2E5CB7214B4A78251C20EA48 /* Pods_NetguruCollegeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +162,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14A0178D231141B8005FF9A5 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				14A0178E231141D4005FF9A5 /* Code */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		14A0178E231141D4005FF9A5 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				14A01798231149D6005FF9A5 /* Views */,
+				14A01790231141F3005FF9A5 /* MainViewController.swift */,
+				14A0179223114211005FF9A5 /* MainView.swift */,
+				14A0179423114223005FF9A5 /* MainView.xib */,
+				14A017962311453D005FF9A5 /* MainViewModel.swift */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		14A01798231149D6005FF9A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14A0179A23114A00005FF9A5 /* SearchResultTableViewCell.swift */,
+				14A017A4231169B5005FF9A5 /* SearchResultTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		14A0179F23114D69005FF9A5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				14A017A023114D7B005FF9A5 /* UITableViewExtension.swift */,
+				14A017A223114DA6005FF9A5 /* ReusableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4EF6845F21E6435400DA50FC /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +215,10 @@
 				E814F7E02310713600788FA9 /* APIError.swift */,
 				E814F7DE2310713600788FA9 /* APIMethod.swift */,
 				E814F7E12310713600788FA9 /* APIRequest.swift */,
+				AAF4ED8823115543005435E8 /* Authorization.swift */,
+				AA450AB92311710B004BD104 /* UserManager.swift */,
+				AA450ABD23117AC9004BD104 /* KeychainManager.swift */,
+				AA450AB723115756004BD104 /* AuthorizationStrings.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -162,6 +265,7 @@
 		696FE4B7217637B5005C9FDD /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				14A0179F23114D69005FF9A5 /* Extensions */,
 				696FE4BF217638AD005C9FDD /* Application */,
 				696FE4B8217637C7005C9FDD /* Source Files */,
 				696FE4BC217637FB005C9FDD /* Interfaces */,
@@ -186,6 +290,12 @@
 		696FE4B9217637D5005C9FDD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E6AF4F5B231176B0009BC89D /* Other */,
+				E6AF4F5423117586009BC89D /* PullRequests */,
+				E6AF4F4D2311742C009BC89D /* Files */,
+				E605F6B323116EFA00B7DB95 /* Readme */,
+				14A0178D231141B8005FF9A5 /* MainView */,
+				E605F69823113F6500B7DB95 /* Login */,
 				E814F7EB2310714E00788FA9 /* Welcome */,
 				E814F7EA2310714500788FA9 /* HelloWorld */,
 			);
@@ -222,6 +332,7 @@
 			children = (
 				696FE497217635CB005C9FDD /* AppDelegate.swift */,
 				E814F7F42310719D00788FA9 /* AppFlowCoordinator.swift */,
+				AA450ABB2311753A004BD104 /* Dependencies.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -229,9 +340,61 @@
 		D78ED9CC3C02DDC356B00910 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA450AB5231155F6004BD104 /* OAuthSwift.framework */,
 				5917DB1E95701B4EE6BDDCAF /* Pods_NetguruCollegeApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E605F69823113F6500B7DB95 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E605F69F23114BA500B7DB95 /* LoginViewViewModel.swift */,
+				E605F69923113F9C00B7DB95 /* LoginViewController.swift */,
+				E605F69B23113FDB00B7DB95 /* LoginView.swift */,
+				E605F69D23113FFD00B7DB95 /* LoginView.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E605F6B323116EFA00B7DB95 /* Readme */ = {
+			isa = PBXGroup;
+			children = (
+				E605F6B423116F2400B7DB95 /* ReadmeViewController.swift */,
+				E605F6B823116FA400B7DB95 /* ReadmeView.swift */,
+				E605F6B523116F2400B7DB95 /* ReadmeView.xib */,
+			);
+			path = Readme;
+			sourceTree = "<group>";
+		};
+		E6AF4F4D2311742C009BC89D /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6AF4F4E23117441009BC89D /* FilesViewController.swift */,
+				E6AF4F522311746E009BC89D /* FilesView.swift */,
+				E6AF4F4F23117441009BC89D /* FilesView.xib */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		E6AF4F5423117586009BC89D /* PullRequests */ = {
+			isa = PBXGroup;
+			children = (
+				E6AF4F55231175A5009BC89D /* PullRequestsViewController.swift */,
+				E6AF4F59231175D7009BC89D /* PullRequestsView.swift */,
+				E6AF4F56231175A5009BC89D /* PullRequestsView.xib */,
+			);
+			path = PullRequests;
+			sourceTree = "<group>";
+		};
+		E6AF4F5B231176B0009BC89D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E6AF4F5C231176E5009BC89D /* OtherViewController.swift */,
+				E6AF4F6023117A6E009BC89D /* OtherView.swift */,
+				E6AF4F5D231176E5009BC89D /* OtherView.xib */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		E814F7DB2310712200788FA9 /* Base classes */ = {
@@ -304,6 +467,7 @@
 				696FE491217635CB005C9FDD /* Frameworks */,
 				696FE492217635CB005C9FDD /* Resources */,
 				699E0A862177DE4000B2A204 /* SwiftLint */,
+				6E2C018E7374C09B59A507B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -376,10 +540,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				696FE4A2217635D2005C9FDD /* LaunchScreen.storyboard in Resources */,
+				E6AF4F5F231176E5009BC89D /* OtherView.xib in Resources */,
 				E814F7F32310717400788FA9 /* WelcomeView.xib in Resources */,
+				E6AF4F5123117441009BC89D /* FilesView.xib in Resources */,
+				E605F69E23113FFD00B7DB95 /* LoginView.xib in Resources */,
 				696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */,
+				14A0179523114223005FF9A5 /* MainView.xib in Resources */,
 				E814F7EF2310716700788FA9 /* HelloWorldView.xib in Resources */,
+				14A017A5231169B5005FF9A5 /* SearchResultTableViewCell.xib in Resources */,
 				696FE49D217635CB005C9FDD /* Main.storyboard in Resources */,
+				E6AF4F58231175A5009BC89D /* PullRequestsView.xib in Resources */,
+				E605F6B723116F2400B7DB95 /* ReadmeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +582,23 @@
 			shellPath = /bin/sh;
 			shellScript = "${SRCROOT}/Pods/SwiftLint/swiftlint\n";
 		};
+		6E2C018E7374C09B59A507B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9DA1A4651AAA7DE86DDDE3DA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,16 +628,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E605F69A23113F9C00B7DB95 /* LoginViewController.swift in Sources */,
+				E605F6A023114BA500B7DB95 /* LoginViewViewModel.swift in Sources */,
 				E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */,
 				F532429C23114CC10017D510 /* SearchRequestType.swift in Sources */,
+				14A017A323114DA6005FF9A5 /* ReusableView.swift in Sources */,
+				14A0179323114211005FF9A5 /* MainView.swift in Sources */,
 				696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */,
+				AA450ABC2311753A004BD104 /* Dependencies.swift in Sources */,
+				E6AF4F5023117441009BC89D /* FilesViewController.swift in Sources */,
+				E6AF4F6123117A6E009BC89D /* OtherView.swift in Sources */,
+				E605F6B923116FA400B7DB95 /* ReadmeView.swift in Sources */,
+				14A017A123114D7B005FF9A5 /* UITableViewExtension.swift in Sources */,
 				E814F7E22310713600788FA9 /* APIMethod.swift in Sources */,
 				F53242A8231165200017D510 /* RepoResponseParser.swift in Sources */,
 				E814F7E42310713600788FA9 /* APIError.swift in Sources */,
 				F532429E23114EB00017D510 /* SearchUserRequest.swift in Sources */,
 				F53242992311435E0017D510 /* SearchProjectRequest.swift in Sources */,
 				F53242A3231157F10017D510 /* User.swift in Sources */,
+				14A01791231141F3005FF9A5 /* MainViewController.swift in Sources */,
+				E814F7E42310713600788FA9 /* APIError.swift in Sources */,
+				AAF4ED8923115543005435E8 /* Authorization.swift in Sources */,
+				AA450ABA2311710B004BD104 /* UserManager.swift in Sources */,
+				AA450AB823115756004BD104 /* AuthorizationStrings.swift in Sources */,
+				AA450ABE23117AC9004BD104 /* KeychainManager.swift in Sources */,
+				E6AF4F532311746E009BC89D /* FilesView.swift in Sources */,
 				E814F7E92310714300788FA9 /* HelloWorldViewController.swift in Sources */,
+				14A017972311453D005FF9A5 /* MainViewModel.swift in Sources */,
 				E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */,
 				E814F7E52310713600788FA9 /* APIRequest.swift in Sources */,
 				F53242A6231163300017D510 /* ResponceParser.swift in Sources */,
@@ -458,6 +663,14 @@
 				F53242A1231157E70017D510 /* Repository.swift in Sources */,
 				E814F7E82310714300788FA9 /* WelcomeViewController.swift in Sources */,
 				F53242972311405D0017D510 /* SearchProvider.swift in Sources */,
+				E6AF4F57231175A5009BC89D /* PullRequestsViewController.swift in Sources */,
+				E6AF4F5A231175D7009BC89D /* PullRequestsView.swift in Sources */,
+				E605F6B623116F2400B7DB95 /* ReadmeViewController.swift in Sources */,
+				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
+				E6AF4F5E231176E5009BC89D /* OtherViewController.swift in Sources */,
+				14A0179B23114A00005FF9A5 /* SearchResultTableViewCell.swift in Sources */,
+				E814F7E82310714300788FA9 /* WelcomeViewController.swift in Sources */,
+				E605F69C23113FDB00B7DB95 /* LoginView.swift in Sources */,
 				E814F7F52310719E00788FA9 /* AppFlowCoordinator.swift in Sources */,
 				E814F7ED2310716000788FA9 /* HelloWorldView.swift in Sources */,
 			);
