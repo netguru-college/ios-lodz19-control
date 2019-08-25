@@ -3,7 +3,6 @@
 //  NetguruCollegeApp
 //
 
-
 import Foundation
 
 struct PullRequest {
