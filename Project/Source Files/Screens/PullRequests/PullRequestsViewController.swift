@@ -45,7 +45,9 @@ extension PullRequestsViewController : UITableViewDelegate, UITableViewDataSourc
         let cell = customView.tableView.dequeueReusableCell(withIdentifier: "PullRequestCell", for: indexPath)
         cell.textLabel?.text = "\(pullRequests[indexPath.row].title)"
         if pullRequests[indexPath.row].status == "open" {
-            cell.backgroundColor = UIColor(red:0.48, green:0.93, blue:0.62, alpha:1.0)        } else {
+            cell.backgroundColor = UIColor(red:0.48, green:0.93, blue:0.62, alpha:1.0)
+            
+        } else {
             cell.backgroundColor = UIColor(red:0.98, green:0.69, blue:0.63, alpha:1.0)
         }
         return cell
@@ -62,6 +64,4 @@ extension PullRequestsViewController: PullRequestProvierDelegate {
     func errorOccured() {
         return
     }
-    
-    
 }
