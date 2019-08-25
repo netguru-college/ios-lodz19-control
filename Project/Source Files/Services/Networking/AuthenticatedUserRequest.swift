@@ -6,7 +6,7 @@
 
 import Foundation
 
-class AuthenticatedUserRequest: APIRequest {
+final class AuthenticatedUserRequest: APIRequest {
     var path = "/user"
     var method = APIMethod.get
 }
