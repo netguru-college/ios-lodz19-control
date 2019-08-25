@@ -10,6 +10,7 @@
 		140900D82312B79D0064CBF4 /* CommitsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140900D72312B79D0064CBF4 /* CommitsResponse.swift */; };
 		140900DB2312B8490064CBF4 /* CommitsRequestApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140900DA2312B8490064CBF4 /* CommitsRequestApiRequest.swift */; };
 		140900DD2312B89C0064CBF4 /* CommitsRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140900DC2312B89C0064CBF4 /* CommitsRequestProvider.swift */; };
+		140900DF2312B9E30064CBF4 /* CommitsResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140900DE2312B9E30064CBF4 /* CommitsResponseParser.swift */; };
 		14A01791231141F3005FF9A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A01790231141F3005FF9A5 /* MainViewController.swift */; };
 		14A0179323114211005FF9A5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0179223114211005FF9A5 /* MainView.swift */; };
 		14A0179523114223005FF9A5 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A0179423114223005FF9A5 /* MainView.xib */; };
@@ -87,6 +88,7 @@
 		140900D72312B79D0064CBF4 /* CommitsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsResponse.swift; sourceTree = "<group>"; };
 		140900DA2312B8490064CBF4 /* CommitsRequestApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsRequestApiRequest.swift; sourceTree = "<group>"; };
 		140900DC2312B89C0064CBF4 /* CommitsRequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsRequestProvider.swift; sourceTree = "<group>"; };
+		140900DE2312B9E30064CBF4 /* CommitsResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsResponseParser.swift; sourceTree = "<group>"; };
 		14A01790231141F3005FF9A5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		14A0179223114211005FF9A5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		14A0179423114223005FF9A5 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
@@ -488,6 +490,7 @@
 				F53242A7231165200017D510 /* RepoResponseParser.swift */,
 				C6CC8CF7231296A900EA932D /* PullRequestParser.swift */,
 				F53242A9231165390017D510 /* UserResponseParser.swift */,
+				140900DE2312B9E30064CBF4 /* CommitsResponseParser.swift */,
 			);
 			path = ResponceParser;
 			sourceTree = "<group>";
@@ -711,6 +714,7 @@
 				E6AF4F5A231175D7009BC89D /* PullRequestsView.swift in Sources */,
 				E605F6B623116F2400B7DB95 /* ReadmeViewController.swift in Sources */,
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
+				140900DF2312B9E30064CBF4 /* CommitsResponseParser.swift in Sources */,
 				E6AF4F5E231176E5009BC89D /* OtherViewController.swift in Sources */,
 				14A0179B23114A00005FF9A5 /* SearchResultTableViewCell.swift in Sources */,
 				E814F7E82310714300788FA9 /* WelcomeViewController.swift in Sources */,
