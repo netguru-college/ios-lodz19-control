@@ -28,6 +28,7 @@
 		AA450ABE23117AC9004BD104 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA450ABD23117AC9004BD104 /* KeychainManager.swift */; };
 		AA450AC023127D16004BD104 /* AuthenticatedUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA450ABF23127D16004BD104 /* AuthenticatedUserRequest.swift */; };
 		AA450AC2231280E2004BD104 /* AuthenticatedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA450AC1231280E2004BD104 /* AuthenticatedUser.swift */; };
+		AA450AC52312914C004BD104 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA450AC42312914C004BD104 /* LoginButton.swift */; };
 		AAF4ED8923115543005435E8 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4ED8823115543005435E8 /* Authorization.swift */; };
 		E605F69A23113F9C00B7DB95 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69923113F9C00B7DB95 /* LoginViewController.swift */; };
 		E605F69C23113FDB00B7DB95 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69B23113FDB00B7DB95 /* LoginView.swift */; };
@@ -105,6 +106,7 @@
 		AA450ABD23117AC9004BD104 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		AA450ABF23127D16004BD104 /* AuthenticatedUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedUserRequest.swift; sourceTree = "<group>"; };
 		AA450AC1231280E2004BD104 /* AuthenticatedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedUser.swift; sourceTree = "<group>"; };
+		AA450AC42312914C004BD104 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		AAF4ED8823115543005435E8 /* Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
 		B70CCCFD923A49BB70EE7D09 /* Pods-NetguruCollegeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.release.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.release.xcconfig"; sourceTree = "<group>"; };
 		E605F69923113F9C00B7DB95 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 		696FE4B7217637B5005C9FDD /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				AA450AC323129120004BD104 /* SharedUI */,
 				14A0179F23114D69005FF9A5 /* Extensions */,
 				696FE4BF217638AD005C9FDD /* Application */,
 				696FE4B8217637C7005C9FDD /* Source Files */,
@@ -340,6 +343,14 @@
 				AA450ABB2311753A004BD104 /* Dependencies.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		AA450AC323129120004BD104 /* SharedUI */ = {
+			isa = PBXGroup;
+			children = (
+				AA450AC42312914C004BD104 /* LoginButton.swift */,
+			);
+			path = SharedUI;
 			sourceTree = "<group>";
 		};
 		D78ED9CC3C02DDC356B00910 /* Frameworks */ = {
@@ -635,6 +646,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E605F69A23113F9C00B7DB95 /* LoginViewController.swift in Sources */,
+				AA450AC52312914C004BD104 /* LoginButton.swift in Sources */,
 				E605F6A023114BA500B7DB95 /* LoginViewViewModel.swift in Sources */,
 				AA450AC023127D16004BD104 /* AuthenticatedUserRequest.swift in Sources */,
 				E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */,
