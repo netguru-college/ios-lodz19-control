@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 final class SearchResultTableViewCell: UITableViewCell {
     @IBOutlet var logoImageView: UIImageView!
@@ -35,5 +36,7 @@ final class SearchResultTableViewCell: UITableViewCell {
         repoDescription.text = model.description
         language.text = model.language
         dateLabel.text = model.lastUpdateOn
+        guard let image = model.imageURl else { return }
+        logoImageView.kf.setImage(with: URL(string: image))
     }
 }

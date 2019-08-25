@@ -6,16 +6,19 @@
 import Foundation
 
 struct Repository {
-    var name: String
-    var description: String?
-    var language: String
-    var owner: String
-    var lastUpdateOn: Date
-    init(name: String, description: String, language: String, lastUpdateOn: Date, owner: String) {
+    let name: String
+    let owner: String
+    let description: String?
+    let language: String
+    let lastUpdateOn: Date
+    let avatarUrl: String?
+    
+    init(name: String, owner: String, description: String, language: String, lastUpdateOn: Date, avatarUrl: String?) {
         self.name = name
+        self.owner = owner
         self.description = description
         self.language = language
         self.lastUpdateOn = lastUpdateOn
-        self.owner = owner
+        self.avatarUrl = avatarUrl
     }
 }

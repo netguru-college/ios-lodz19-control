@@ -31,12 +31,14 @@ final class MainViewModel {
         let description: String?
         let language: String
         let lastUpdateOn: String
+        let imageURl: String?
 
         init(data: Repository, dataFormater: DateFormatter) {
             self.name = data.name
             self.description = data.description
             self.language = data.language
             self.lastUpdateOn = dataFormater.string(from: data.lastUpdateOn)
+            self.imageURl = data.avatarUrl
         }
     }
 
