@@ -15,9 +15,9 @@ struct Repository {
     init(fullName: String, name: String, description: String, language: String, lastUpdateOn: Date, owner: String) {
         self.fullName = fullName
         self.name = name
+        self.owner = owner
         self.description = description
         self.language = language
         self.lastUpdateOn = lastUpdateOn
-        self.owner = owner
     }
 }

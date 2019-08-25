@@ -9,4 +9,5 @@ target 'NetguruCollegeApp' do
   pod 'OAuthSwift', '~> 2.0.0'
   pod 'KeychainSwift', '~> 16.0'
   pod 'MarkdownView', '~> 1.6'
+  pod 'Kingfisher', '~> 5.7'
 end
