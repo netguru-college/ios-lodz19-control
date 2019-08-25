@@ -55,6 +55,15 @@
 		E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7F02310716D00788FA9 /* WelcomeView.swift */; };
 		E814F7F32310717400788FA9 /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E814F7F22310717400788FA9 /* WelcomeView.xib */; };
 		E814F7F52310719E00788FA9 /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7F42310719D00788FA9 /* AppFlowCoordinator.swift */; };
+		F53242972311405D0017D510 /* SearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242962311405D0017D510 /* SearchProvider.swift */; };
+		F53242992311435E0017D510 /* SearchProjectRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242982311435E0017D510 /* SearchProjectRequest.swift */; };
+		F532429C23114CC10017D510 /* SearchRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532429B23114CC10017D510 /* SearchRequestType.swift */; };
+		F532429E23114EB00017D510 /* SearchUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532429D23114EB00017D510 /* SearchUserRequest.swift */; };
+		F53242A1231157E70017D510 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A0231157E70017D510 /* Repository.swift */; };
+		F53242A3231157F10017D510 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A2231157F10017D510 /* User.swift */; };
+		F53242A6231163300017D510 /* ResponceParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A5231163300017D510 /* ResponceParser.swift */; };
+		F53242A8231165200017D510 /* RepoResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A7231165200017D510 /* RepoResponseParser.swift */; };
+		F53242AA231165390017D510 /* UserResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A9231165390017D510 /* UserResponseParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +131,15 @@
 		E814F7F02310716D00788FA9 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		E814F7F22310717400788FA9 /* WelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
 		E814F7F42310719D00788FA9 /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		F53242962311405D0017D510 /* SearchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProvider.swift; sourceTree = "<group>"; };
+		F53242982311435E0017D510 /* SearchProjectRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProjectRequest.swift; sourceTree = "<group>"; };
+		F532429B23114CC10017D510 /* SearchRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequestType.swift; sourceTree = "<group>"; };
+		F532429D23114EB00017D510 /* SearchUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserRequest.swift; sourceTree = "<group>"; };
+		F53242A0231157E70017D510 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		F53242A2231157F10017D510 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F53242A5231163300017D510 /* ResponceParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponceParser.swift; sourceTree = "<group>"; };
+		F53242A7231165200017D510 /* RepoResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoResponseParser.swift; sourceTree = "<group>"; };
+		F53242A9231165390017D510 /* UserResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponseParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +279,9 @@
 			children = (
 				E814F7DB2310712200788FA9 /* Base classes */,
 				4EF6845F21E6435400DA50FC /* Services */,
+				F53242A42311606E0017D510 /* ResponceParser */,
+				F532429A231146940017D510 /* Seach */,
+				F532429F231157A20017D510 /* DataModel */,
 				696FE4B9217637D5005C9FDD /* Screens */,
 			);
 			path = "Source Files";
@@ -402,6 +423,36 @@
 				E814F7F22310717400788FA9 /* WelcomeView.xib */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		F532429A231146940017D510 /* Seach */ = {
+			isa = PBXGroup;
+			children = (
+				F53242962311405D0017D510 /* SearchProvider.swift */,
+				F532429B23114CC10017D510 /* SearchRequestType.swift */,
+				F53242982311435E0017D510 /* SearchProjectRequest.swift */,
+				F532429D23114EB00017D510 /* SearchUserRequest.swift */,
+			);
+			path = Seach;
+			sourceTree = "<group>";
+		};
+		F532429F231157A20017D510 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				F53242A0231157E70017D510 /* Repository.swift */,
+				F53242A2231157F10017D510 /* User.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		F53242A42311606E0017D510 /* ResponceParser */ = {
+			isa = PBXGroup;
+			children = (
+				F53242A5231163300017D510 /* ResponceParser.swift */,
+				F53242A7231165200017D510 /* RepoResponseParser.swift */,
+				F53242A9231165390017D510 /* UserResponseParser.swift */,
+			);
+			path = ResponceParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -580,6 +631,7 @@
 				E605F69A23113F9C00B7DB95 /* LoginViewController.swift in Sources */,
 				E605F6A023114BA500B7DB95 /* LoginViewViewModel.swift in Sources */,
 				E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */,
+				F532429C23114CC10017D510 /* SearchRequestType.swift in Sources */,
 				14A017A323114DA6005FF9A5 /* ReusableView.swift in Sources */,
 				14A0179323114211005FF9A5 /* MainView.swift in Sources */,
 				696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */,
@@ -589,6 +641,11 @@
 				E605F6B923116FA400B7DB95 /* ReadmeView.swift in Sources */,
 				14A017A123114D7B005FF9A5 /* UITableViewExtension.swift in Sources */,
 				E814F7E22310713600788FA9 /* APIMethod.swift in Sources */,
+				F53242A8231165200017D510 /* RepoResponseParser.swift in Sources */,
+				E814F7E42310713600788FA9 /* APIError.swift in Sources */,
+				F532429E23114EB00017D510 /* SearchUserRequest.swift in Sources */,
+				F53242992311435E0017D510 /* SearchProjectRequest.swift in Sources */,
+				F53242A3231157F10017D510 /* User.swift in Sources */,
 				14A01791231141F3005FF9A5 /* MainViewController.swift in Sources */,
 				E814F7E42310713600788FA9 /* APIError.swift in Sources */,
 				AAF4ED8923115543005435E8 /* Authorization.swift in Sources */,
@@ -600,6 +657,12 @@
 				14A017972311453D005FF9A5 /* MainViewModel.swift in Sources */,
 				E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */,
 				E814F7E52310713600788FA9 /* APIRequest.swift in Sources */,
+				F53242A6231163300017D510 /* ResponceParser.swift in Sources */,
+				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
+				F53242AA231165390017D510 /* UserResponseParser.swift in Sources */,
+				F53242A1231157E70017D510 /* Repository.swift in Sources */,
+				E814F7E82310714300788FA9 /* WelcomeViewController.swift in Sources */,
+				F53242972311405D0017D510 /* SearchProvider.swift in Sources */,
 				E6AF4F57231175A5009BC89D /* PullRequestsViewController.swift in Sources */,
 				E6AF4F5A231175D7009BC89D /* PullRequestsView.swift in Sources */,
 				E605F6B623116F2400B7DB95 /* ReadmeViewController.swift in Sources */,
