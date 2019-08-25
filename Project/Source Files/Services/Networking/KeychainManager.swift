@@ -9,6 +9,7 @@ enum KeychainManager {
     enum KeychainKey: String {
         case tokenId
         case deviceId
+        case avatarUrl
     }
     
     private static let keychain = KeychainSwift()
