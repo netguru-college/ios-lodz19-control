@@ -53,12 +53,13 @@ class RepoResponseParser {
         }
         guard let owner = item["owner"] as? [String : Any] else { return nil }
         guard let ownerName = owner["login"] as? String else { return nil }
+        let avatarUrl = owner["avatar_url"] as? String
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         guard let lastUpdateOn = dateFormatter.date(from: dateString) else {
             return nil
         }
-        repository = Repository(name: name, description: description, language: language, lastUpdateOn: lastUpdateOn, owner: ownerName)
+        repository = Repository(name: name, owner: ownerName, description: description, language: language, lastUpdateOn: lastUpdateOn, avatarUrl: avatarUrl)
         return repository
     }
 }

@@ -1,24 +1,28 @@
 PODS:
   - KeychainSwift (16.0.1)
+  - Kingfisher (5.7.0)
   - OAuthSwift (2.0.0)
   - SwiftLint (0.34.0)
 
 DEPENDENCIES:
   - KeychainSwift (~> 16.0)
+  - Kingfisher (~> 5.7)
   - OAuthSwift (~> 2.0.0)
   - SwiftLint (~> 0.34.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - KeychainSwift
+    - Kingfisher
     - OAuthSwift
     - SwiftLint
 
 SPEC CHECKSUMS:
   KeychainSwift: 4209611373ca4a098e09b1e547eebd87c544dcc4
+  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
   OAuthSwift: 6805456763cf1c7ae0c16765257ed430b7aacae7
   SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
 
-PODFILE CHECKSUM: 9c8bd87027edb8af9edf5b5aaf726be5863c1ba4
+PODFILE CHECKSUM: 544ece1ad187f4aa2e7c8b577eabfbfa2086f431
 
 COCOAPODS: 1.7.5
