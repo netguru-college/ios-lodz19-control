@@ -6,7 +6,7 @@
 import UIKit
 
 protocol MainViewControllerDelegate: AnyObject {
-    func selectedRow(with indexPath: TempModel)
+    func selectedRow(with indexPath: Repository)
 }
 
 final class MainViewController: UIViewController {
@@ -87,7 +87,7 @@ extension MainViewController: UITableViewDataSource {
 
 extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.selectedRow(with: viewModel.item(at: indexPath))
+        delegate?.selectedRow(with: viewModel.selectedRow(at: indexPath.row))
     }
 }
 

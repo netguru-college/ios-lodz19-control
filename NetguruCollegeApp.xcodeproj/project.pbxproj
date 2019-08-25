@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		140900D6231287EE0064CBF4 /* ApiRequestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140900D5231287EE0064CBF4 /* ApiRequestWorker.swift */; };
 		14A01791231141F3005FF9A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A01790231141F3005FF9A5 /* MainViewController.swift */; };
 		14A0179323114211005FF9A5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0179223114211005FF9A5 /* MainView.swift */; };
 		14A0179523114223005FF9A5 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A0179423114223005FF9A5 /* MainView.xib */; };
@@ -62,7 +61,7 @@
 		F532429E23114EB00017D510 /* SearchUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532429D23114EB00017D510 /* SearchUserRequest.swift */; };
 		F53242A1231157E70017D510 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A0231157E70017D510 /* Repository.swift */; };
 		F53242A3231157F10017D510 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A2231157F10017D510 /* User.swift */; };
-		F53242A6231163300017D510 /* ResponceParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A5231163300017D510 /* ResponceParser.swift */; };
+		F53242A6231163300017D510 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A5231163300017D510 /* ResponseParser.swift */; };
 		F53242A8231165200017D510 /* RepoResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A7231165200017D510 /* RepoResponseParser.swift */; };
 		F53242AA231165390017D510 /* UserResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A9231165390017D510 /* UserResponseParser.swift */; };
 /* End PBXBuildFile section */
@@ -78,7 +77,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		140900D5231287EE0064CBF4 /* ApiRequestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestWorker.swift; sourceTree = "<group>"; };
 		14A01790231141F3005FF9A5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		14A0179223114211005FF9A5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		14A0179423114223005FF9A5 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
@@ -139,7 +137,7 @@
 		F532429D23114EB00017D510 /* SearchUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserRequest.swift; sourceTree = "<group>"; };
 		F53242A0231157E70017D510 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		F53242A2231157F10017D510 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		F53242A5231163300017D510 /* ResponceParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponceParser.swift; sourceTree = "<group>"; };
+		F53242A5231163300017D510 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
 		F53242A7231165200017D510 /* RepoResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoResponseParser.swift; sourceTree = "<group>"; };
 		F53242A9231165390017D510 /* UserResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponseParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -206,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				4EF6846021E6438300DA50FC /* Networking */,
-				140900D5231287EE0064CBF4 /* ApiRequestWorker.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -451,7 +448,7 @@
 		F53242A42311606E0017D510 /* ResponceParser */ = {
 			isa = PBXGroup;
 			children = (
-				F53242A5231163300017D510 /* ResponceParser.swift */,
+				F53242A5231163300017D510 /* ResponseParser.swift */,
 				F53242A7231165200017D510 /* RepoResponseParser.swift */,
 				F53242A9231165390017D510 /* UserResponseParser.swift */,
 			);
@@ -642,7 +639,6 @@
 				E6AF4F5023117441009BC89D /* FilesViewController.swift in Sources */,
 				E6AF4F6123117A6E009BC89D /* OtherView.swift in Sources */,
 				E605F6B923116FA400B7DB95 /* ReadmeView.swift in Sources */,
-				140900D6231287EE0064CBF4 /* ApiRequestWorker.swift in Sources */,
 				14A017A123114D7B005FF9A5 /* UITableViewExtension.swift in Sources */,
 				E814F7E22310713600788FA9 /* APIMethod.swift in Sources */,
 				F53242A8231165200017D510 /* RepoResponseParser.swift in Sources */,
@@ -661,7 +657,7 @@
 				14A017972311453D005FF9A5 /* MainViewModel.swift in Sources */,
 				E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */,
 				E814F7E52310713600788FA9 /* APIRequest.swift in Sources */,
-				F53242A6231163300017D510 /* ResponceParser.swift in Sources */,
+				F53242A6231163300017D510 /* ResponseParser.swift in Sources */,
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
 				F53242AA231165390017D510 /* UserResponseParser.swift in Sources */,
 				F53242A1231157E70017D510 /* Repository.swift in Sources */,

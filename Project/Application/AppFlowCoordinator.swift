@@ -43,7 +43,7 @@ extension AppFlowCoordinator: HelloWorldViewControllerDelegate {
 }
 
 extension AppFlowCoordinator: MainViewControllerDelegate {
-    func selectedRow(with: TempModel) {
+    func selectedRow(with: Repository) {
         setTabBarAsRoot()
     }
 }
