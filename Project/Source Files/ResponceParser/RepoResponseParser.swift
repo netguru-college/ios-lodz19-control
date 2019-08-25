@@ -43,8 +43,8 @@ class RepoResponseParser {
     
     func convertRepoItemToObject(item: [String: Any]) -> Repository? {
         var repository: Repository?
-        guard let name = item["full_name"] as? String else { return nil }
-
+        guard let fullName = item["full_name"] as? String else { return nil }
+        guard let name = item["name"] as? String else { return nil }
         guard let description = item["description"] as? String else { return nil }
         guard let language = item["language"] as? String else {
             return nil
@@ -60,7 +60,7 @@ class RepoResponseParser {
         guard let lastUpdateOn = dateFormatter.date(from: dateString) else {
             return nil
         }
-        repository = Repository(name: name, owner: ownerName, description: description, language: language, lastUpdateOn: lastUpdateOn, avatarUrl: avatarUrl)
+        repository = Repository(fullName: fullName, name: name, description: description, language: language, lastUpdateOn: lastUpdateOn, owner: ownerName, avatarUrl: avatarUrl)
         return repository
     }
 }

@@ -34,7 +34,7 @@ final class MainViewModel {
         let imageURl: String?
 
         init(data: Repository, dataFormater: DateFormatter) {
-            self.name = data.name
+            self.name = data.fullName
             self.description = data.description
             self.language = data.language
             self.lastUpdateOn = dataFormater.string(from: data.lastUpdateOn)
