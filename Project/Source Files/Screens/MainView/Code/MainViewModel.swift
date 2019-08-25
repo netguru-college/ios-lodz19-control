@@ -6,60 +6,88 @@
 import Foundation
 import UIKit
 
-struct TempModel {
-    #warning("Temp")
-    let name: String
-    let description: String
-    let language: String
-    let date: Date?
-
-    init(name: String, description: String, language: String, date: Date? = nil) {
-        self.name = name
-        self.description = description
-        self.language = language
-        self.date = date
-    }
-}
-
 protocol MainViewModelProtocol: AnyObject {
     var delegate: MainViewModelDelegate! { get set }
+    var texts: MainViewModel.Texts { get }
     var dataSourceCount: Int { get }
 
-    func fetchData()
-    func selectedTask(at row: Int)
-    func item(at indexPath: IndexPath) -> TempModel
+    func fetchData(with text: String)
+    func selectedRow(at row: Int) -> Repository 
+    func item(at indexPath: IndexPath) -> MainViewModel.RepositoryCellModel
 }
 
 protocol MainViewModelDelegate: AnyObject {
-     func reloadData()
+    func reloadData()
 }
 
 final class MainViewModel {
+    struct Texts {
+        let defaultPlaceholder = "Enter searching repositorium"
+        let emptyTextFieldPlaceholder = "Wrong searching input"
+    }
+
+    struct RepositoryCellModel {
+        let name: String
+        let description: String?
+        let language: String
+        let lastUpdateOn: String
+
+        init(data: Repository, dataFormater: DateFormatter) {
+            self.name = data.name
+            self.description = data.description
+            self.language = data.language
+            self.lastUpdateOn = dataFormater.string(from: data.lastUpdateOn)
+        }
+    }
+
     weak var delegate: MainViewModelDelegate!
 
-    private var dataSource: [TempModel] = []
+    private lazy var dateFormaterr: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        return formatter
+    }()
 
-    init() {
-    }
+    private var dataSource: [Repository] = []
 }
 
 extension MainViewModel: MainViewModelProtocol {
+    var texts: MainViewModel.Texts {
+        return Texts()
+    }
+
     var dataSourceCount: Int {
         return dataSource.count
     }
 
-    func fetchData() {
-        #warning("Temp waiting for Api response")
-        let data = TempModel(name: "Hello", description: "dsdasd", language: "Swift")
-        dataSource.append(data)
+    func fetchData(with text: String) {
+        let searchProvider = SearchProvider()
+        searchProvider.delegate = self
+        searchProvider.seachProject(nameContains: text)
+    }
+
+    func selectedRow(at row: Int) -> Repository {
+        return dataSource[row]
+    }
+
+    func item(at indexPath: IndexPath) -> RepositoryCellModel {
+        let cellModel = RepositoryCellModel(data: dataSource[indexPath.row], dataFormater: dateFormaterr)
+        return cellModel
+    }
+}
+
+extension MainViewModel: SearchProviderDelegate {
+    func receivedRepositories(repoArray: [Repository]) {
+        let tempData = repoArray
+        dataSource = tempData
         delegate.reloadData()
     }
 
-    func selectedTask(at row: Int) {
-        #warning("Add logic later")
+    func receivedUsers(repoArray: [User]) {
+        #warning("Add Logic Later")
     }
 
-    func item(at indexPath: IndexPath) -> TempModel {
-        return dataSource[indexPath.row]
+    func gotWrongResponse() {
+        #warning("Add Logic Later")
     }
 }

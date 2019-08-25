@@ -27,6 +27,10 @@
 		AA450ABC2311753A004BD104 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA450ABB2311753A004BD104 /* Dependencies.swift */; };
 		AA450ABE23117AC9004BD104 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA450ABD23117AC9004BD104 /* KeychainManager.swift */; };
 		AAF4ED8923115543005435E8 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4ED8823115543005435E8 /* Authorization.swift */; };
+		C6CC8CF423128FD800EA932D /* PullRequestListApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC8CF323128FD800EA932D /* PullRequestListApiRequest.swift */; };
+		C6CC8CF62312906100EA932D /* PullRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC8CF52312906100EA932D /* PullRequestProvider.swift */; };
+		C6CC8CF8231296A900EA932D /* PullRequestParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC8CF7231296A900EA932D /* PullRequestParser.swift */; };
+		C6CC8CFA2312971300EA932D /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CC8CF92312971300EA932D /* PullRequest.swift */; };
 		E605F69A23113F9C00B7DB95 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69923113F9C00B7DB95 /* LoginViewController.swift */; };
 		E605F69C23113FDB00B7DB95 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605F69B23113FDB00B7DB95 /* LoginView.swift */; };
 		E605F69E23113FFD00B7DB95 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E605F69D23113FFD00B7DB95 /* LoginView.xib */; };
@@ -105,6 +109,10 @@
 		AA450ABD23117AC9004BD104 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		AAF4ED8823115543005435E8 /* Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
 		B70CCCFD923A49BB70EE7D09 /* Pods-NetguruCollegeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.release.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.release.xcconfig"; sourceTree = "<group>"; };
+		C6CC8CF323128FD800EA932D /* PullRequestListApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestListApiRequest.swift; sourceTree = "<group>"; };
+		C6CC8CF52312906100EA932D /* PullRequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestProvider.swift; sourceTree = "<group>"; };
+		C6CC8CF7231296A900EA932D /* PullRequestParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestParser.swift; sourceTree = "<group>"; };
+		C6CC8CF92312971300EA932D /* PullRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequest.swift; sourceTree = "<group>"; };
 		E605F69923113F9C00B7DB95 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E605F69B23113FDB00B7DB95 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E605F69D23113FFD00B7DB95 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
@@ -281,6 +289,7 @@
 		696FE4B8217637C7005C9FDD /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				C6CC8CF223128FC000EA932D /* PullRequest */,
 				E814F7DB2310712200788FA9 /* Base classes */,
 				4EF6845F21E6435400DA50FC /* Services */,
 				F53242A42311606E0017D510 /* ResponceParser */,
@@ -339,6 +348,15 @@
 				AA450ABB2311753A004BD104 /* Dependencies.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		C6CC8CF223128FC000EA932D /* PullRequest */ = {
+			isa = PBXGroup;
+			children = (
+				C6CC8CF323128FD800EA932D /* PullRequestListApiRequest.swift */,
+				C6CC8CF52312906100EA932D /* PullRequestProvider.swift */,
+			);
+			path = PullRequest;
 			sourceTree = "<group>";
 		};
 		D78ED9CC3C02DDC356B00910 /* Frameworks */ = {
@@ -446,7 +464,7 @@
 			children = (
 				F53242A0231157E70017D510 /* Repository.swift */,
 				F53242A2231157F10017D510 /* User.swift */,
-				F53242AD23128B5B0017D510 /* PullRequest.swift */,
+				C6CC8CF92312971300EA932D /* PullRequest.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -456,6 +474,7 @@
 			children = (
 				F53242A5231163300017D510 /* ResponseParser.swift */,
 				F53242A7231165200017D510 /* RepoResponseParser.swift */,
+				C6CC8CF7231296A900EA932D /* PullRequestParser.swift */,
 				F53242A9231165390017D510 /* UserResponseParser.swift */,
 			);
 			path = ResponceParser;
@@ -655,11 +674,13 @@
 				F53242A3231157F10017D510 /* User.swift in Sources */,
 				14A01791231141F3005FF9A5 /* MainViewController.swift in Sources */,
 				E814F7E42310713600788FA9 /* APIError.swift in Sources */,
+				C6CC8CF62312906100EA932D /* PullRequestProvider.swift in Sources */,
 				AAF4ED8923115543005435E8 /* Authorization.swift in Sources */,
 				AA450ABA2311710B004BD104 /* UserManager.swift in Sources */,
 				AA450AB823115756004BD104 /* AuthorizationStrings.swift in Sources */,
 				AA450ABE23117AC9004BD104 /* KeychainManager.swift in Sources */,
 				E6AF4F532311746E009BC89D /* FilesView.swift in Sources */,
+				C6CC8CF423128FD800EA932D /* PullRequestListApiRequest.swift in Sources */,
 				E814F7E92310714300788FA9 /* HelloWorldViewController.swift in Sources */,
 				14A017972311453D005FF9A5 /* MainViewModel.swift in Sources */,
 				E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */,
@@ -670,6 +691,8 @@
 				F53242A1231157E70017D510 /* Repository.swift in Sources */,
 				E814F7E82310714300788FA9 /* WelcomeViewController.swift in Sources */,
 				F53242972311405D0017D510 /* SearchProvider.swift in Sources */,
+				C6CC8CFA2312971300EA932D /* PullRequest.swift in Sources */,
+				C6CC8CF8231296A900EA932D /* PullRequestParser.swift in Sources */,
 				E6AF4F57231175A5009BC89D /* PullRequestsViewController.swift in Sources */,
 				E6AF4F5A231175D7009BC89D /* PullRequestsView.swift in Sources */,
 				F53242B02312973B0017D510 /* PullRequestCell.swift in Sources */,

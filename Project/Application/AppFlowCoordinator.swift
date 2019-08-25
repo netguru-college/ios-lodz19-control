@@ -23,14 +23,14 @@ final class AppFlowCoordinator: FlowCoordinator {
         window.makeKeyAndVisible()
     }
 
-    func setTabBarAsRoot() {
-        let tableViewController = UITabBarController()
+    func setTabBarAsRoot(with repoModel: Repository) {
+        let tabBarViewController = UITabBarController()
         let readmeViewController = ReadmeViewController()
         let filesViewController = FilesViewController()
         let pullRequestsViewController = PullRequestsViewController()
         let otherViewController = OtherViewController()
-        tableViewController.setViewControllers([readmeViewController, filesViewController, pullRequestsViewController, otherViewController], animated: true)
-        rootViewController = tableViewController
+        tabBarViewController.setViewControllers([readmeViewController, filesViewController, pullRequestsViewController, otherViewController], animated: true)
+        rootViewController.show(tabBarViewController, sender: nil)
     }
 }
 
@@ -43,13 +43,12 @@ extension AppFlowCoordinator: HelloWorldViewControllerDelegate {
 }
 
 extension AppFlowCoordinator: MainViewControllerDelegate {
-    func searchButtonAction() {
-
+    func repositorySelected(repository: Repository) {
+        setTabBarAsRoot(with: repository)
     }
 }
 
 extension AppFlowCoordinator: LoginViewViewControllerDelegate {
-    
     func didSelectSignInButton() {
         // TODO: navigate to next screen
     }
