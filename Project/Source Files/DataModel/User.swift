@@ -5,7 +5,7 @@
 
 import Foundation
 
-class User {
+struct User {
     private var id: Int
     private var userName: String
     private var avatarURL: String

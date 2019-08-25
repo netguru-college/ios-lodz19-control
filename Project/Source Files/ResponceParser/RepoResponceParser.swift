@@ -5,7 +5,7 @@
 
 import Foundation
 
-class RepoResponceParser {
+class RepoResponseParser {
     func parceResponce(data: Data) throws -> [Repository] {
         var repositories: [Repository] = []
         do {
@@ -14,11 +14,11 @@ class RepoResponceParser {
                 do {
                     repositories = try parseRepoArray(array: responceArray)
                 } catch {
-                    throw ResponceParserError.wrongResponce
+                    throw ResponseParserError.wrongResponce
                 }
             }
         } catch {
-            throw ResponceParserError.wrongResponce
+            throw ResponseParserError.wrongResponce
         }
         return repositories
     }
@@ -31,14 +31,14 @@ class RepoResponceParser {
                 if let repoItem = repoData as? [String : Any] {
                     let repo = convertRepoItemToObject(item: repoItem)
                     if repo != nil {
-                        parced.append(repo!)
+                        parsed.append(repo!)
                     }
                 }
             }
         } else {
-            throw ResponceParserError.wrongResponce
+            throw ResponseParserError.wrongResponce
         }
-        return parced
+        return parsed
     }
     
     func convertRepoItemToObject(item: [String: Any]) -> Repository? {
@@ -53,7 +53,9 @@ class RepoResponceParser {
         }
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        guard let lastUpdateOn = dateFormatter.date(from: dateString) as? Date else { return nil }
+        guard let lastUpdateOn = dateFormatter.date(from: dateString) else {
+            return nil
+        }
         repository = Repository(name: name, description: description, language: language, lastUpdateOn: lastUpdateOn)
         return repository
     }

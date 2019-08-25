@@ -25,15 +25,15 @@
 		E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7F02310716D00788FA9 /* WelcomeView.swift */; };
 		E814F7F32310717400788FA9 /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E814F7F22310717400788FA9 /* WelcomeView.xib */; };
 		E814F7F52310719E00788FA9 /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7F42310719D00788FA9 /* AppFlowCoordinator.swift */; };
-		F53242972311405D0017D510 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242962311405D0017D510 /* Search.swift */; };
+		F53242972311405D0017D510 /* SearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242962311405D0017D510 /* SearchProvider.swift */; };
 		F53242992311435E0017D510 /* SearchProjectRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242982311435E0017D510 /* SearchProjectRequest.swift */; };
 		F532429C23114CC10017D510 /* SearchRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532429B23114CC10017D510 /* SearchRequestType.swift */; };
 		F532429E23114EB00017D510 /* SearchUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532429D23114EB00017D510 /* SearchUserRequest.swift */; };
 		F53242A1231157E70017D510 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A0231157E70017D510 /* Repository.swift */; };
 		F53242A3231157F10017D510 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A2231157F10017D510 /* User.swift */; };
 		F53242A6231163300017D510 /* ResponceParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A5231163300017D510 /* ResponceParser.swift */; };
-		F53242A8231165200017D510 /* RepoResponceParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A7231165200017D510 /* RepoResponceParser.swift */; };
-		F53242AA231165390017D510 /* UserResponceParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A9231165390017D510 /* UserResponceParser.swift */; };
+		F53242A8231165200017D510 /* RepoResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A7231165200017D510 /* RepoResponseParser.swift */; };
+		F53242AA231165390017D510 /* UserResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A9231165390017D510 /* UserResponseParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,15 +71,15 @@
 		E814F7F02310716D00788FA9 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		E814F7F22310717400788FA9 /* WelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
 		E814F7F42310719D00788FA9 /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
-		F53242962311405D0017D510 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		F53242962311405D0017D510 /* SearchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProvider.swift; sourceTree = "<group>"; };
 		F53242982311435E0017D510 /* SearchProjectRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProjectRequest.swift; sourceTree = "<group>"; };
 		F532429B23114CC10017D510 /* SearchRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequestType.swift; sourceTree = "<group>"; };
 		F532429D23114EB00017D510 /* SearchUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserRequest.swift; sourceTree = "<group>"; };
 		F53242A0231157E70017D510 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		F53242A2231157F10017D510 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F53242A5231163300017D510 /* ResponceParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponceParser.swift; sourceTree = "<group>"; };
-		F53242A7231165200017D510 /* RepoResponceParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoResponceParser.swift; sourceTree = "<group>"; };
-		F53242A9231165390017D510 /* UserResponceParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponceParser.swift; sourceTree = "<group>"; };
+		F53242A7231165200017D510 /* RepoResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoResponseParser.swift; sourceTree = "<group>"; };
+		F53242A9231165390017D510 /* UserResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponseParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,7 +265,7 @@
 		F532429A231146940017D510 /* Seach */ = {
 			isa = PBXGroup;
 			children = (
-				F53242962311405D0017D510 /* Search.swift */,
+				F53242962311405D0017D510 /* SearchProvider.swift */,
 				F532429B23114CC10017D510 /* SearchRequestType.swift */,
 				F53242982311435E0017D510 /* SearchProjectRequest.swift */,
 				F532429D23114EB00017D510 /* SearchUserRequest.swift */,
@@ -286,8 +286,8 @@
 			isa = PBXGroup;
 			children = (
 				F53242A5231163300017D510 /* ResponceParser.swift */,
-				F53242A7231165200017D510 /* RepoResponceParser.swift */,
-				F53242A9231165390017D510 /* UserResponceParser.swift */,
+				F53242A7231165200017D510 /* RepoResponseParser.swift */,
+				F53242A9231165390017D510 /* UserResponseParser.swift */,
 			);
 			path = ResponceParser;
 			sourceTree = "<group>";
@@ -444,7 +444,7 @@
 				F532429C23114CC10017D510 /* SearchRequestType.swift in Sources */,
 				696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */,
 				E814F7E22310713600788FA9 /* APIMethod.swift in Sources */,
-				F53242A8231165200017D510 /* RepoResponceParser.swift in Sources */,
+				F53242A8231165200017D510 /* RepoResponseParser.swift in Sources */,
 				E814F7E42310713600788FA9 /* APIError.swift in Sources */,
 				F532429E23114EB00017D510 /* SearchUserRequest.swift in Sources */,
 				F53242992311435E0017D510 /* SearchProjectRequest.swift in Sources */,
@@ -454,10 +454,10 @@
 				E814F7E52310713600788FA9 /* APIRequest.swift in Sources */,
 				F53242A6231163300017D510 /* ResponceParser.swift in Sources */,
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
-				F53242AA231165390017D510 /* UserResponceParser.swift in Sources */,
+				F53242AA231165390017D510 /* UserResponseParser.swift in Sources */,
 				F53242A1231157E70017D510 /* Repository.swift in Sources */,
 				E814F7E82310714300788FA9 /* WelcomeViewController.swift in Sources */,
-				F53242972311405D0017D510 /* Search.swift in Sources */,
+				F53242972311405D0017D510 /* SearchProvider.swift in Sources */,
 				E814F7F52310719E00788FA9 /* AppFlowCoordinator.swift in Sources */,
 				E814F7ED2310716000788FA9 /* HelloWorldView.swift in Sources */,
 			);

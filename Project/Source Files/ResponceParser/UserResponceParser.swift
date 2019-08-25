@@ -5,6 +5,6 @@
 
 import Foundation
 
-class UserResponceParser {
+final class UserResponseParser {
     func parseResponse(data: Data) {}
 }

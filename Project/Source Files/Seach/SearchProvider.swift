@@ -5,16 +5,16 @@
 
 import Foundation
 
-protocol SearchDelegate: AnyObject {
+protocol SearchProviderDelegate: AnyObject {
     func receivedRepositories(repoArray: [Repository])
-    func reseivedUsers(repoArray: [User])
+    func receivedUsers(repoArray: [User])
     func gotWrongResponce()
     
 }
 
-final class Search {
+final class SearchProvider {
     let parser = ResponceParser()
-    public weak var delegate: SearchDelegate?
+    public weak var delegate: SearchProviderDelegate?
     private let apiClient = APIClient()
     /// Creates search request to API and sends it.
     ///
@@ -22,7 +22,7 @@ final class Search {
     ///   - name: String (name of user or repo)
     ///   - type: SearchRequestType (has values .projectName or .userName)
     /// - Returns:
-    ///     reseivedRepositories(repoArray: [Repository]), where repoArray can be empty or gotWrongResponce() if responce can't be processed
+    ///     receivedRepositories(repoArray: [Repository]), where repoArray can be empty or gotWrongResponce() if responce can't be processed
     func makeSearch(nameContains name: String, type: SearchRequestType) {
         if type == .projectName {
             seachProject(nameContains: name)
@@ -40,16 +40,13 @@ final class Search {
                               success: { data in
             do {
                 let repositories = try self.parser.repoFound(data: data)
-                self.delegate?.reseivedRepositories(repoArray: repositories)
+                self.delegate?.receivedRepositories(repoArray: repositories)
             } catch {
                 self.delegate?.gotWrongResponce()
             }
         }) { error in
-            if error != nil {
-                print(error!)
-            } else {
-                print("Search repo error. NIL in responce.")
-            }
+                self.delegate?.gotWrongResponce()
+            
         }
     }
     
@@ -62,11 +59,7 @@ final class Search {
                               success: { data in
             self.parser.userFound(data: data)
         }) { error in
-            if error != nil {
-                print(error!)
-            } else {
-                print("Search user error. NIL in responce.")
-            }
+                self.delegate?.gotWrongResponce()
         }
     }
     

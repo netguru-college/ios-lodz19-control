@@ -5,7 +5,7 @@
 
 import Foundation
 
-class Repository {
+struct Repository {
     var name: String
     var description: String?
     var language: String
