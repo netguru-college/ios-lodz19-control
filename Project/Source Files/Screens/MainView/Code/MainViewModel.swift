@@ -23,7 +23,7 @@ protocol MainViewModelDelegate: AnyObject {
 final class MainViewModel {
     struct Texts {
         let defaultPlaceholder = "Enter searching repositorium"
-        let emptyTextFieldPlaceholder = "Wrong searching imput"
+        let emptyTextFieldPlaceholder = "Wrong searching input"
     }
 
     struct RepositoryCellModel {
@@ -49,9 +49,6 @@ final class MainViewModel {
     }()
 
     private var dataSource: [Repository] = []
-
-    init() {
-    }
 }
 
 extension MainViewModel: MainViewModelProtocol {
@@ -86,7 +83,11 @@ extension MainViewModel: SearchProviderDelegate {
         delegate.reloadData()
     }
 
-    func receivedUsers(repoArray: [User]) { }
+    func receivedUsers(repoArray: [User]) {
+        #warning("Add Logic Later")
+    }
 
-    func gotWrongResponse() { }
+    func gotWrongResponse() {
+        #warning("Add Logic Later")
+    }
 }

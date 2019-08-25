@@ -23,7 +23,7 @@ final class AppFlowCoordinator: FlowCoordinator {
         window.makeKeyAndVisible()
     }
 
-    func setTabBarAsRoot() {
+    func setTabBarAsRoot(with repoModel: Repository) {
         let tabBarViewController = UITabBarController()
         let readmeViewController = ReadmeViewController()
         let filesViewController = FilesViewController()
@@ -43,8 +43,8 @@ extension AppFlowCoordinator: HelloWorldViewControllerDelegate {
 }
 
 extension AppFlowCoordinator: MainViewControllerDelegate {
-    func selectedRow(with: Repository) {
-        setTabBarAsRoot()
+    func repositorySelected(repository: Repository) {
+        setTabBarAsRoot(with: repository)
     }
 }
 

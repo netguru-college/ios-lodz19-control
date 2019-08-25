@@ -6,7 +6,7 @@
 import UIKit
 
 protocol MainViewControllerDelegate: AnyObject {
-    func selectedRow(with indexPath: Repository)
+    func repositorySelected(repository indexPath: Repository)
 }
 
 final class MainViewController: UIViewController {
@@ -47,7 +47,7 @@ final class MainViewController: UIViewController {
     }
 
     @objc func search() {
-        isTextFieldFiled()
+        processInput()
     }
 
     private func setupTableView() {
@@ -57,13 +57,13 @@ final class MainViewController: UIViewController {
         mainView.searchTextField.clearButtonMode = .always
     }
 
-    private func isTextFieldFiled() {
+    private func processInput() {
         guard let text = mainView.searchTextField.text,
             !text.isEmpty else {
                 mainView.searchTextField.placeholder = viewModel.texts.emptyTextFieldPlaceholder
                 return
         }
-        viewModel.fetchData(with: text)
+        return viewModel.fetchData(with: mainView.searchTextField.text!)
     }
 }
 
@@ -87,7 +87,7 @@ extension MainViewController: UITableViewDataSource {
 
 extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.selectedRow(with: viewModel.selectedRow(at: indexPath.row))
+        delegate?.repositorySelected(repository: viewModel.selectedRow(at: indexPath.row))
     }
 }
 
