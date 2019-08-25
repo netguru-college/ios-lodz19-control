@@ -27,7 +27,7 @@ final class AppFlowCoordinator: FlowCoordinator {
         let tabBarViewController = UITabBarController()
         let readmeViewController = ReadmeViewController(withRepository: repoModel)
         let filesViewController = FilesViewController()
-        let pullRequestsViewController = PullRequestsViewController()
+        let pullRequestsViewController = PullRequestsViewController(repository: repoModel)
         let otherViewController = OtherViewController()
         tabBarViewController.setViewControllers([readmeViewController, filesViewController, pullRequestsViewController, otherViewController], animated: true)
         rootViewController.show(tabBarViewController, sender: nil)

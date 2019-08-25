@@ -71,6 +71,7 @@
 		F53242A6231163300017D510 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A5231163300017D510 /* ResponseParser.swift */; };
 		F53242A8231165200017D510 /* RepoResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A7231165200017D510 /* RepoResponseParser.swift */; };
 		F53242AA231165390017D510 /* UserResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A9231165390017D510 /* UserResponseParser.swift */; };
+		F53242B02312973B0017D510 /* PullRequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242AF2312973B0017D510 /* PullRequestCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +155,8 @@
 		F53242A5231163300017D510 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
 		F53242A7231165200017D510 /* RepoResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoResponseParser.swift; sourceTree = "<group>"; };
 		F53242A9231165390017D510 /* UserResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponseParser.swift; sourceTree = "<group>"; };
+		F53242AD23128B5B0017D510 /* PullRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequest.swift; sourceTree = "<group>"; };
+		F53242AF2312973B0017D510 /* PullRequestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +258,7 @@
 				696FE495217635CB005C9FDD /* Products */,
 				5EC86D1AC6F92BE513E78EC0 /* Pods */,
 				D78ED9CC3C02DDC356B00910 /* Frameworks */,
+				F53242B32312B36E0017D510 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -415,6 +419,7 @@
 			isa = PBXGroup;
 			children = (
 				E6AF4F55231175A5009BC89D /* PullRequestsViewController.swift */,
+				F53242AF2312973B0017D510 /* PullRequestCell.swift */,
 				E6AF4F59231175D7009BC89D /* PullRequestsView.swift */,
 				E6AF4F56231175A5009BC89D /* PullRequestsView.xib */,
 			);
@@ -490,6 +495,14 @@
 				E612C5D62312A12600080582 /* ReadmeResponseParses.swift */,
 			);
 			path = ResponceParser;
+			sourceTree = "<group>";
+		};
+		F53242B32312B36E0017D510 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				F53242AD23128B5B0017D510 /* PullRequest.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -709,6 +722,7 @@
 				C6CC8CF8231296A900EA932D /* PullRequestParser.swift in Sources */,
 				E6AF4F57231175A5009BC89D /* PullRequestsViewController.swift in Sources */,
 				E6AF4F5A231175D7009BC89D /* PullRequestsView.swift in Sources */,
+				F53242B02312973B0017D510 /* PullRequestCell.swift in Sources */,
 				E605F6B623116F2400B7DB95 /* ReadmeViewController.swift in Sources */,
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
 				E6AF4F5E231176E5009BC89D /* OtherViewController.swift in Sources */,
