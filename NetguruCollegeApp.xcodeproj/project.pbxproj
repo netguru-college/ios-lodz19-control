@@ -21,6 +21,7 @@
 		696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696FE49E217635D2005C9FDD /* Assets.xcassets */; };
 		696FE4A2217635D2005C9FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696FE4A0217635D2005C9FDD /* LaunchScreen.storyboard */; };
 		696FE4AD217635D2005C9FDD /* NetguruCollegeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FE4AC217635D2005C9FDD /* NetguruCollegeAppTests.swift */; };
+		7E132CAA5AA68D56A23BA684 /* Pods_NetguruCollegeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41100587EC933C4853658EAF /* Pods_NetguruCollegeAppTests.framework */; };
 		AA450AB6231155F6004BD104 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA450AB5231155F6004BD104 /* OAuthSwift.framework */; };
 		AA450AB823115756004BD104 /* AuthorizationStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA450AB723115756004BD104 /* AuthorizationStrings.swift */; };
 		AA450ABA2311710B004BD104 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA450AB92311710B004BD104 /* UserManager.swift */; };
@@ -89,6 +90,8 @@
 		14A017A023114D7B005FF9A5 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		14A017A223114DA6005FF9A5 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		14A017A4231169B5005FF9A5 /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
+		1B8A6D768F8041EA20FC905A /* Pods-NetguruCollegeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeAppTests.release.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeAppTests/Pods-NetguruCollegeAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		41100587EC933C4853658EAF /* Pods_NetguruCollegeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetguruCollegeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5917DB1E95701B4EE6BDDCAF /* Pods_NetguruCollegeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetguruCollegeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		696FE494217635CB005C9FDD /* NetguruCollegeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetguruCollegeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		696FE497217635CB005C9FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +114,7 @@
 		C6CC8CF52312906100EA932D /* PullRequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestProvider.swift; sourceTree = "<group>"; };
 		C6CC8CF7231296A900EA932D /* PullRequestParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestParser.swift; sourceTree = "<group>"; };
 		C6CC8CF92312971300EA932D /* PullRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequest.swift; sourceTree = "<group>"; };
+		DE47E61CBF5715F41C010ADA /* Pods-NetguruCollegeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeAppTests/Pods-NetguruCollegeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E605F69923113F9C00B7DB95 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E605F69B23113FDB00B7DB95 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E605F69D23113FFD00B7DB95 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E132CAA5AA68D56A23BA684 /* Pods_NetguruCollegeAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +241,8 @@
 			children = (
 				70B9FAC81C5FF8A335FA5053 /* Pods-NetguruCollegeApp.debug.xcconfig */,
 				B70CCCFD923A49BB70EE7D09 /* Pods-NetguruCollegeApp.release.xcconfig */,
+				DE47E61CBF5715F41C010ADA /* Pods-NetguruCollegeAppTests.debug.xcconfig */,
+				1B8A6D768F8041EA20FC905A /* Pods-NetguruCollegeAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -360,6 +367,7 @@
 			children = (
 				AA450AB5231155F6004BD104 /* OAuthSwift.framework */,
 				5917DB1E95701B4EE6BDDCAF /* Pods_NetguruCollegeApp.framework */,
+				41100587EC933C4853658EAF /* Pods_NetguruCollegeAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -502,9 +510,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 696FE4B4217635D2005C9FDD /* Build configuration list for PBXNativeTarget "NetguruCollegeAppTests" */;
 			buildPhases = (
+				D26F6C0D020A1E756305D0D6 /* [CP] Check Pods Manifest.lock */,
 				696FE4A4217635D2005C9FDD /* Sources */,
 				696FE4A5217635D2005C9FDD /* Frameworks */,
 				696FE4A6217635D2005C9FDD /* Resources */,
+				44BDF7C616486C55C7193915 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -584,6 +594,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		44BDF7C616486C55C7193915 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetguruCollegeAppTests/Pods-NetguruCollegeAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetguruCollegeAppTests/Pods-NetguruCollegeAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetguruCollegeAppTests/Pods-NetguruCollegeAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		699E0A862177DE4000B2A204 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -635,6 +662,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-NetguruCollegeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D26F6C0D020A1E756305D0D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetguruCollegeAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -813,6 +862,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -831,6 +881,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -845,19 +896,28 @@
 		};
 		696FE4B5217635D2005C9FDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE47E61CBF5715F41C010ADA /* Pods-NetguruCollegeAppTests.debug.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NetguruCollegeApp.app/NetguruCollegeApp";
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "NetguruCollegeApp Tests";
 				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
 		};
 		696FE4B6217635D2005C9FDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B8A6D768F8041EA20FC905A /* Pods-NetguruCollegeAppTests.release.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NetguruCollegeApp.app/NetguruCollegeApp";
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "NetguruCollegeApp Tests";
 				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
 		};
