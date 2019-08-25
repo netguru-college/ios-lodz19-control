@@ -7,7 +7,9 @@ import Foundation
 
 final class UserManager {
     private var underlyingOauthtoken: String?
-    var isLogged = false
+    var isLogged: Bool {
+        return oauthToken != nil
+    }
     var avatarUrl: String?
     var oauthToken: String? {
         get {
@@ -15,7 +17,6 @@ final class UserManager {
                 return token
             }
             if let token: String = KeychainManager.get(from: .tokenId) {
-                isLogged = true
                 underlyingOauthtoken = token
                 setAvatarUrl()
                 return token
@@ -25,7 +26,6 @@ final class UserManager {
 
         set {
             KeychainManager.store(newValue, for: .tokenId)
-            isLogged = true
         }
     }
 
@@ -47,5 +47,13 @@ final class UserManager {
         } else {
             fetchUserAvatar()
         }
+    }
+    
+    func loggout() {
+        KeychainManager.delete(with: .tokenId)
+        KeychainManager.delete(with: .avatarUrl)
+        oauthToken = nil
+        underlyingOauthtoken = nil
+        avatarUrl = nil
     }
 }
