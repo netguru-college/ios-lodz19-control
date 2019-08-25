@@ -1,24 +1,28 @@
 PODS:
   - KeychainSwift (16.0.1)
+  - MarkdownView (1.6.0)
   - OAuthSwift (2.0.0)
   - SwiftLint (0.34.0)
 
 DEPENDENCIES:
   - KeychainSwift (~> 16.0)
+  - MarkdownView (~> 1.6)
   - OAuthSwift (~> 2.0.0)
   - SwiftLint (~> 0.34.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - KeychainSwift
+    - MarkdownView
     - OAuthSwift
     - SwiftLint
 
 SPEC CHECKSUMS:
   KeychainSwift: 4209611373ca4a098e09b1e547eebd87c544dcc4
+  MarkdownView: 25c1c2d7ff9706624a575556296e188be3dd3f6b
   OAuthSwift: 6805456763cf1c7ae0c16765257ed430b7aacae7
   SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
 
-PODFILE CHECKSUM: 9c8bd87027edb8af9edf5b5aaf726be5863c1ba4
+PODFILE CHECKSUM: b356364d41cb25f1a1f40bfe1ceefa15b3c8c298
 
 COCOAPODS: 1.7.5
