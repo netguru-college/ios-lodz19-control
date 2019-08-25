@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140900D82312B79D0064CBF4 /* CommitsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140900D72312B79D0064CBF4 /* CommitsResponse.swift */; };
+		140900DB2312B8490064CBF4 /* CommitsRequestApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140900DA2312B8490064CBF4 /* CommitsRequestApiRequest.swift */; };
+		140900DD2312B89C0064CBF4 /* CommitsRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140900DC2312B89C0064CBF4 /* CommitsRequestProvider.swift */; };
 		14A01791231141F3005FF9A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A01790231141F3005FF9A5 /* MainViewController.swift */; };
 		14A0179323114211005FF9A5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0179223114211005FF9A5 /* MainView.swift */; };
 		14A0179523114223005FF9A5 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A0179423114223005FF9A5 /* MainView.xib */; };
@@ -81,6 +84,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		140900D72312B79D0064CBF4 /* CommitsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsResponse.swift; sourceTree = "<group>"; };
+		140900DA2312B8490064CBF4 /* CommitsRequestApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsRequestApiRequest.swift; sourceTree = "<group>"; };
+		140900DC2312B89C0064CBF4 /* CommitsRequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsRequestProvider.swift; sourceTree = "<group>"; };
 		14A01790231141F3005FF9A5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		14A0179223114211005FF9A5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		14A0179423114223005FF9A5 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
@@ -170,6 +176,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		140900D92312B8200064CBF4 /* CommitsRequest */ = {
+			isa = PBXGroup;
+			children = (
+				140900DA2312B8490064CBF4 /* CommitsRequestApiRequest.swift */,
+				140900DC2312B89C0064CBF4 /* CommitsRequestProvider.swift */,
+			);
+			path = CommitsRequest;
+			sourceTree = "<group>";
+		};
 		14A0178D231141B8005FF9A5 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +300,7 @@
 		696FE4B8217637C7005C9FDD /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				140900D92312B8200064CBF4 /* CommitsRequest */,
 				C6CC8CF223128FC000EA932D /* PullRequest */,
 				E814F7DB2310712200788FA9 /* Base classes */,
 				4EF6845F21E6435400DA50FC /* Services */,
@@ -460,6 +476,7 @@
 				F53242A0231157E70017D510 /* Repository.swift */,
 				F53242A2231157F10017D510 /* User.swift */,
 				C6CC8CF92312971300EA932D /* PullRequest.swift */,
+				140900D72312B79D0064CBF4 /* CommitsResponse.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -650,6 +667,7 @@
 			files = (
 				E605F69A23113F9C00B7DB95 /* LoginViewController.swift in Sources */,
 				E605F6A023114BA500B7DB95 /* LoginViewViewModel.swift in Sources */,
+				140900DB2312B8490064CBF4 /* CommitsRequestApiRequest.swift in Sources */,
 				E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */,
 				F532429C23114CC10017D510 /* SearchRequestType.swift in Sources */,
 				14A017A323114DA6005FF9A5 /* ReusableView.swift in Sources */,
@@ -657,6 +675,7 @@
 				696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */,
 				AA450ABC2311753A004BD104 /* Dependencies.swift in Sources */,
 				E6AF4F5023117441009BC89D /* FilesViewController.swift in Sources */,
+				140900D82312B79D0064CBF4 /* CommitsResponse.swift in Sources */,
 				E6AF4F6123117A6E009BC89D /* OtherView.swift in Sources */,
 				E605F6B923116FA400B7DB95 /* ReadmeView.swift in Sources */,
 				14A017A123114D7B005FF9A5 /* UITableViewExtension.swift in Sources */,
@@ -681,6 +700,7 @@
 				E814F7E52310713600788FA9 /* APIRequest.swift in Sources */,
 				F53242A6231163300017D510 /* ResponseParser.swift in Sources */,
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
+				140900DD2312B89C0064CBF4 /* CommitsRequestProvider.swift in Sources */,
 				F53242AA231165390017D510 /* UserResponseParser.swift in Sources */,
 				F53242A1231157E70017D510 /* Repository.swift in Sources */,
 				E814F7E82310714300788FA9 /* WelcomeViewController.swift in Sources */,
