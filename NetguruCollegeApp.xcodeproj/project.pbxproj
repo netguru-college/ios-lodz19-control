@@ -364,6 +364,8 @@
 				AA450AC42312914C004BD104 /* LoginButton.swift */,
 			);
 			path = SharedUI;
+			sourceTree = "<group>";
+		};
 
 		C6CC8CF223128FC000EA932D /* PullRequest */ = {
 			isa = PBXGroup;
