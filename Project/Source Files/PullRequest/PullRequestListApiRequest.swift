@@ -12,6 +12,9 @@ final class PullRequestListApiRequest: APIRequest {
         return "/repos/\(owner)/\(repo)/pulls"
     }
     var method: APIMethod = .get
+    var parameters: [String: String]? {
+        return ["state": "all"]
+    }
 
     init(owner: String, repo: String) {
         self.owner = owner
