@@ -11,7 +11,7 @@ final class AuthenticatedUserRequest: APIRequest {
     var method = APIMethod.get
     var token: String
     var headers: [String: String]? {
-        return ["Authorization": token]
+        return ["Authorization": "token \(token)"]
     }
     
     init(token: String) {

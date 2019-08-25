@@ -33,6 +33,7 @@ final class APIClient {
 
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = request.method.rawValue
+        urlRequest.allHTTPHeaderFields = request.headers
 
         let task = session.dataTask(
             with: urlRequest,
@@ -65,6 +66,7 @@ final class APIClient {
                 }
 
                 do {
+                    print(String(data: data, encoding: .utf8))
                     let model = try JSONDecoder().decode(T.self, from: data)
                     success(model)
                 } catch {
