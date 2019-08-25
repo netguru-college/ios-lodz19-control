@@ -11,7 +11,6 @@ final class ReadmeViewController: UIViewController {
     private var customView: ReadmeView {
         return view as! ReadmeView
     }
-    
     // MARK: - Functions
     
     init() {
@@ -19,7 +18,7 @@ final class ReadmeViewController: UIViewController {
         self.tabBarItem.title = "Read me"
         self.tabBarItem.image = #imageLiteral(resourceName: "Read_Me")
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

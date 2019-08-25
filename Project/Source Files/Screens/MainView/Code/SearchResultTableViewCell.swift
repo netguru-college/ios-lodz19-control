@@ -30,10 +30,10 @@ final class SearchResultTableViewCell: UITableViewCell {
         dateLabel.font = .systemFont(ofSize: Constant.descriptionSize, weight: .regular)
     }
 
-    func updateData(with model: TempModel) {
+    func updateData(with model: MainViewModel.RepositoryCellModel) {
         name.text = model.name
         repoDescription.text = model.description
         language.text = model.language
+        dateLabel.text = model.lastUpdateOn
     }
 }
-

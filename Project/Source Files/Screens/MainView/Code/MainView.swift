@@ -19,5 +19,6 @@ final class MainView: UIView {
     private func setup() {
         searchResultTableView.separatorInset = .zero
         searchResultTableView.registerCellByNib(SearchResultTableViewCell.self)
+        searchButton.titleLabel?.text = "Search"
     }
 }

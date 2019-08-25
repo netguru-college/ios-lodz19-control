@@ -5,7 +5,13 @@
 
 import Foundation
 
-final class APIClient {
+protocol APIClientProtocol {
+    func sendRequest(request: APIRequest, success: @escaping (Data?) -> Void, failure: @escaping (Error?) -> Void)
+    func sendRequestAndDecode<T: Decodable>(request: APIRequest, success: @escaping (T) -> Void, failure: @escaping (Error?) -> Void
+    )
+}
+
+final class APIClient: APIClientProtocol {
 
     let baseURL = "https://api.github.com"
     let sessionConfiguration = URLSessionConfiguration.default
