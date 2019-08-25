@@ -80,4 +80,19 @@ final class APIClient: APIClientProtocol {
             failure: failure
         )
     }
+
+    func getUrlContent(urlString: String, completion: @escaping (String?) -> Void) {
+        guard let url = URL(string: urlString) else {
+            completion("")
+            return
+        }
+        var string = ""
+        let task = session.dataTask(with: url) { data, _, _ in
+            if let str = String(data: data!, encoding: String.Encoding.utf8) {
+                string = str
+            }
+            completion(string)
+        }
+        task.resume()
+    }
 }

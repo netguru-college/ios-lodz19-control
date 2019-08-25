@@ -28,4 +28,16 @@ final class ResponseParser {
             userParser.parseResponse(data: data!)
         }
     }
+    func readmeFound(data: Data?) throws -> String {
+        var url = ""
+        if let data = data {
+            let readmeParser = ReadmeResponseParser()
+            do {
+                url = try readmeParser.parseResponse(data: data)
+            } catch {
+                throw ResponseParserError.wrongResponse
+            }
+        }
+        return url
+    }
 }
