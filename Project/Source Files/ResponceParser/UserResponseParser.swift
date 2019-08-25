@@ -1,5 +1,5 @@
 //
-//  UserResponceParser.swift
+//  UserResponseParser.swift
 //  NetguruCollegeApp
 //
 

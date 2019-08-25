@@ -1,24 +1,24 @@
 //
-//  RepoResponceParser.swift
+//  RepoResponseParser.swift
 //  NetguruCollegeApp
 //
 
 import Foundation
 
 class RepoResponseParser {
-    func parceResponce(data: Data) throws -> [Repository] {
+    func parceResponse(data: Data) throws -> [Repository] {
         var repositories: [Repository] = []
         do {
             //Create an array of JSONS
-            if let responceArray = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+            if let responseArray = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
                 do {
-                    repositories = try parseRepoArray(array: responceArray)
+                    repositories = try parseRepoArray(array: responseArray)
                 } catch {
-                    throw ResponseParserError.wrongResponce
+                    throw ResponseParserError.wrongResponse
                 }
             }
         } catch {
-            throw ResponseParserError.wrongResponce
+            throw ResponseParserError.wrongResponse
         }
         return repositories
     }
@@ -36,7 +36,7 @@ class RepoResponseParser {
                 }
             }
         } else {
-            throw ResponseParserError.wrongResponce
+            throw ResponseParserError.wrongResponse
         }
         return parsed
     }

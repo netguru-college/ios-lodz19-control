@@ -8,12 +8,12 @@ import Foundation
 protocol SearchProviderDelegate: AnyObject {
     func receivedRepositories(repoArray: [Repository])
     func receivedUsers(repoArray: [User])
-    func gotWrongResponce()
+    func gotWrongResponse()
     
 }
 
 final class SearchProvider {
-    let parser = ResponceParser()
+    let parser = ResponseParser()
     public weak var delegate: SearchProviderDelegate?
     private let apiClient = APIClient()
     /// Creates search request to API and sends it.
@@ -22,7 +22,7 @@ final class SearchProvider {
     ///   - name: String (name of user or repo)
     ///   - type: SearchRequestType (has values .projectName or .userName)
     /// - Returns:
-    ///     receivedRepositories(repoArray: [Repository]), where repoArray can be empty or gotWrongResponce() if responce can't be processed
+    ///     receivedRepositories(repoArray: [Repository]), where repoArray can be empty or gotWrongResponce() if response can't be processed
     func makeSearch(nameContains name: String, type: SearchRequestType) {
         if type == .projectName {
             seachProject(nameContains: name)
@@ -42,10 +42,10 @@ final class SearchProvider {
                 let repositories = try self.parser.repoFound(data: data)
                 self.delegate?.receivedRepositories(repoArray: repositories)
             } catch {
-                self.delegate?.gotWrongResponce()
+                self.delegate?.gotWrongResponse()
             }
         }) { error in
-                self.delegate?.gotWrongResponce()
+                self.delegate?.gotWrongResponse()
             
         }
     }
@@ -59,7 +59,7 @@ final class SearchProvider {
                               success: { data in
             self.parser.userFound(data: data)
         }) { error in
-                self.delegate?.gotWrongResponce()
+                self.delegate?.gotWrongResponse()
         }
     }
     

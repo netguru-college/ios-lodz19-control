@@ -1,23 +1,23 @@
 //
-//  ResponceParser.swift
+//  ResponseParser.swift
 //  NetguruCollegeApp
 //
 
 import Foundation
 
 enum ResponseParserError: Error {
-    case wrongResponce
+    case wrongResponse
 }
 
-final class ResponceParser {
+final class ResponseParser {
     func repoFound(data: Data?) throws -> [Repository] {
         var repositories : [Repository] = []
         if data != nil {
             let repoParser = RepoResponseParser()
             do {
-                repositories = try repoParser.parceResponce(data: data!)
+                repositories = try repoParser.parceResponse(data: data!)
             } catch {
-                throw ResponseParserError.wrongResponce
+                throw ResponseParserError.wrongResponse
             }
         }
         return repositories
