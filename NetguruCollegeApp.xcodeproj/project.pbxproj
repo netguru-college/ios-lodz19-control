@@ -61,9 +61,11 @@
 		F532429E23114EB00017D510 /* SearchUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532429D23114EB00017D510 /* SearchUserRequest.swift */; };
 		F53242A1231157E70017D510 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A0231157E70017D510 /* Repository.swift */; };
 		F53242A3231157F10017D510 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A2231157F10017D510 /* User.swift */; };
-		F53242A6231163300017D510 /* ResponceParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A5231163300017D510 /* ResponceParser.swift */; };
+		F53242A6231163300017D510 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A5231163300017D510 /* ResponseParser.swift */; };
 		F53242A8231165200017D510 /* RepoResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A7231165200017D510 /* RepoResponseParser.swift */; };
 		F53242AA231165390017D510 /* UserResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242A9231165390017D510 /* UserResponseParser.swift */; };
+		F53242AE23128B5B0017D510 /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242AD23128B5B0017D510 /* PullRequest.swift */; };
+		F53242B02312973B0017D510 /* PullRequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53242AF2312973B0017D510 /* PullRequestCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,9 +139,11 @@
 		F532429D23114EB00017D510 /* SearchUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserRequest.swift; sourceTree = "<group>"; };
 		F53242A0231157E70017D510 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		F53242A2231157F10017D510 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		F53242A5231163300017D510 /* ResponceParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponceParser.swift; sourceTree = "<group>"; };
+		F53242A5231163300017D510 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
 		F53242A7231165200017D510 /* RepoResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoResponseParser.swift; sourceTree = "<group>"; };
 		F53242A9231165390017D510 /* UserResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponseParser.swift; sourceTree = "<group>"; };
+		F53242AD23128B5B0017D510 /* PullRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequest.swift; sourceTree = "<group>"; };
+		F53242AF2312973B0017D510 /* PullRequestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,6 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				E6AF4F55231175A5009BC89D /* PullRequestsViewController.swift */,
+				F53242AF2312973B0017D510 /* PullRequestCell.swift */,
 				E6AF4F59231175D7009BC89D /* PullRequestsView.swift */,
 				E6AF4F56231175A5009BC89D /* PullRequestsView.xib */,
 			);
@@ -441,6 +446,7 @@
 			children = (
 				F53242A0231157E70017D510 /* Repository.swift */,
 				F53242A2231157F10017D510 /* User.swift */,
+				F53242AD23128B5B0017D510 /* PullRequest.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -448,7 +454,7 @@
 		F53242A42311606E0017D510 /* ResponceParser */ = {
 			isa = PBXGroup;
 			children = (
-				F53242A5231163300017D510 /* ResponceParser.swift */,
+				F53242A5231163300017D510 /* ResponseParser.swift */,
 				F53242A7231165200017D510 /* RepoResponseParser.swift */,
 				F53242A9231165390017D510 /* UserResponseParser.swift */,
 			);
@@ -642,6 +648,7 @@
 				14A017A123114D7B005FF9A5 /* UITableViewExtension.swift in Sources */,
 				E814F7E22310713600788FA9 /* APIMethod.swift in Sources */,
 				F53242A8231165200017D510 /* RepoResponseParser.swift in Sources */,
+				F53242AE23128B5B0017D510 /* PullRequest.swift in Sources */,
 				E814F7E42310713600788FA9 /* APIError.swift in Sources */,
 				F532429E23114EB00017D510 /* SearchUserRequest.swift in Sources */,
 				F53242992311435E0017D510 /* SearchProjectRequest.swift in Sources */,
@@ -657,7 +664,7 @@
 				14A017972311453D005FF9A5 /* MainViewModel.swift in Sources */,
 				E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */,
 				E814F7E52310713600788FA9 /* APIRequest.swift in Sources */,
-				F53242A6231163300017D510 /* ResponceParser.swift in Sources */,
+				F53242A6231163300017D510 /* ResponseParser.swift in Sources */,
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
 				F53242AA231165390017D510 /* UserResponseParser.swift in Sources */,
 				F53242A1231157E70017D510 /* Repository.swift in Sources */,
@@ -665,6 +672,7 @@
 				F53242972311405D0017D510 /* SearchProvider.swift in Sources */,
 				E6AF4F57231175A5009BC89D /* PullRequestsViewController.swift in Sources */,
 				E6AF4F5A231175D7009BC89D /* PullRequestsView.swift in Sources */,
+				F53242B02312973B0017D510 /* PullRequestCell.swift in Sources */,
 				E605F6B623116F2400B7DB95 /* ReadmeViewController.swift in Sources */,
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
 				E6AF4F5E231176E5009BC89D /* OtherViewController.swift in Sources */,
