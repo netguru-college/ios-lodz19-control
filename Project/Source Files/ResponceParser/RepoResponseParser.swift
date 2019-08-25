@@ -54,7 +54,7 @@ class RepoResponseParser {
         }
         guard let owner = item["owner"] as? [String : Any] else { return nil }
         guard let ownerName = owner["login"] as? String else { return nil }
-        guard let avatarUrl = owner["avatar_url"] as? String else { return nil }
+        let avatarUrl = owner["avatar_url"] as? String
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         guard let lastUpdateOn = dateFormatter.date(from: dateString) else {
