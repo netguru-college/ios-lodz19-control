@@ -37,20 +37,18 @@ final class AppFlowCoordinator: FlowCoordinator {
     }
 
     func loginButton() -> UIBarButtonItem {
-        dependencies.userManager.setAvatarUrl()
         let buttonView = LoginButtonView(userManager: dependencies.userManager)
+        buttonView.loginButtonDelegate = self
         let loginButton = UIBarButtonItem(customView: buttonView)
-        loginButton.action = #selector(loginSelected)
         return loginButton
         
-//        return UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(loginSelected))
+        return UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(loginSelected))
     }
 
     @objc func loginSelected() {
         if dependencies.userManager.isLogged {
             
         } else {
-            
             authorization.authorize { [weak self] token, error in
                 guard let self = self else { return }
                 if let token = token {
@@ -81,4 +79,12 @@ extension AppFlowCoordinator: LoginViewViewControllerDelegate {
     func didSelectSignInButton() {
         // TODO: navigate to next screen
     }
+}
+
+extension AppFlowCoordinator: LoginButtonViewDelegate {
+    func loginButtoNTapped() {
+        loginSelected()
+    }
+    
+    
 }

@@ -15,12 +15,14 @@ final class UserManager {
     var oauthToken: String? {
         didSet {
             KeychainManager.store(oauthToken, for: .tokenId)
+            setAvatarUrl()
         }
     }
     
     init() {
         if let token: String = KeychainManager.get(from: .tokenId) {
             oauthToken = token
+            setAvatarUrl()
         }
     }
 
