@@ -43,8 +43,7 @@ class RepoResponseParser {
     
     func convertRepoItemToObject(item: [String: Any]) -> Repository? {
         var repository: Repository?
-        guard let name = item["full_name"] as? String else { return nil }
-
+        guard let name = item["name"] as? String else { return nil }
         guard let description = item["description"] as? String else { return nil }
         guard let language = item["language"] as? String else {
             return nil
