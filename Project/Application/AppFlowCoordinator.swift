@@ -24,13 +24,13 @@ final class AppFlowCoordinator: FlowCoordinator {
     }
 
     func setTabBarAsRoot() {
-        let tableViewController = UITabBarController()
+        let tabBarViewController = UITabBarController()
         let readmeViewController = ReadmeViewController()
         let filesViewController = FilesViewController()
         let pullRequestsViewController = PullRequestsViewController()
         let otherViewController = OtherViewController()
-        tableViewController.setViewControllers([readmeViewController, filesViewController, pullRequestsViewController, otherViewController], animated: true)
-        rootViewController = tableViewController
+        tabBarViewController.setViewControllers([readmeViewController, filesViewController, pullRequestsViewController, otherViewController], animated: true)
+        rootViewController.show(tabBarViewController, sender: nil)
     }
 }
 
@@ -43,13 +43,12 @@ extension AppFlowCoordinator: HelloWorldViewControllerDelegate {
 }
 
 extension AppFlowCoordinator: MainViewControllerDelegate {
-    func searchButtonAction() {
-
+    func selectedRow(with: TempModel) {
+        setTabBarAsRoot()
     }
 }
 
 extension AppFlowCoordinator: LoginViewViewControllerDelegate {
-    
     func didSelectSignInButton() {
         // TODO: navigate to next screen
     }

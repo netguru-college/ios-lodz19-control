@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140900D6231287EE0064CBF4 /* ApiRequestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140900D5231287EE0064CBF4 /* ApiRequestWorker.swift */; };
 		14A01791231141F3005FF9A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A01790231141F3005FF9A5 /* MainViewController.swift */; };
 		14A0179323114211005FF9A5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0179223114211005FF9A5 /* MainView.swift */; };
 		14A0179523114223005FF9A5 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A0179423114223005FF9A5 /* MainView.xib */; };
@@ -68,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		140900D5231287EE0064CBF4 /* ApiRequestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestWorker.swift; sourceTree = "<group>"; };
 		14A01790231141F3005FF9A5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		14A0179223114211005FF9A5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		14A0179423114223005FF9A5 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				4EF6846021E6438300DA50FC /* Networking */,
+				140900D5231287EE0064CBF4 /* ApiRequestWorker.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -587,6 +590,7 @@
 				E6AF4F5023117441009BC89D /* FilesViewController.swift in Sources */,
 				E6AF4F6123117A6E009BC89D /* OtherView.swift in Sources */,
 				E605F6B923116FA400B7DB95 /* ReadmeView.swift in Sources */,
+				140900D6231287EE0064CBF4 /* ApiRequestWorker.swift in Sources */,
 				14A017A123114D7B005FF9A5 /* UITableViewExtension.swift in Sources */,
 				E814F7E22310713600788FA9 /* APIMethod.swift in Sources */,
 				14A01791231141F3005FF9A5 /* MainViewController.swift in Sources */,

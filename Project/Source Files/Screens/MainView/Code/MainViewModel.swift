@@ -23,18 +23,23 @@ struct TempModel {
 
 protocol MainViewModelProtocol: AnyObject {
     var delegate: MainViewModelDelegate! { get set }
+    var texts: MainViewModel.Texts { get }
     var dataSourceCount: Int { get }
 
-    func fetchData()
+    func fetchData(with text: String)
     func selectedTask(at row: Int)
     func item(at indexPath: IndexPath) -> TempModel
 }
 
 protocol MainViewModelDelegate: AnyObject {
-     func reloadData()
+    func reloadData()
 }
 
 final class MainViewModel {
+    struct Texts {
+        let defaultPlaceholder = "Enter searching repositorium"
+        let emptyTextFieldPlaceholder = "Wrong searching imput"
+    }
     weak var delegate: MainViewModelDelegate!
 
     private var dataSource: [TempModel] = []
@@ -44,11 +49,15 @@ final class MainViewModel {
 }
 
 extension MainViewModel: MainViewModelProtocol {
+    var texts: MainViewModel.Texts {
+        return Texts()
+    }
+
     var dataSourceCount: Int {
         return dataSource.count
     }
 
-    func fetchData() {
+    func fetchData(with text: String) {
         #warning("Temp waiting for Api response")
         let data = TempModel(name: "Hello", description: "dsdasd", language: "Swift")
         dataSource.append(data)
