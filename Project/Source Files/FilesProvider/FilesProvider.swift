@@ -18,7 +18,7 @@ final class FilesProvider {
     private let apiClient = APIClient()
 
     func searchReadme(repository: Repository) {
-        let request = SearchFilesRequest(withParameters: ["ref": "master"], ownerName: repository.owner, repoName: repository.name)
+        let request = SearchFilesRequest(ownerName: repository.owner, repoName: repository.name)
         apiClient.sendRequest(request: request, success: { data in
             guard let data = data else { return }
             do {
